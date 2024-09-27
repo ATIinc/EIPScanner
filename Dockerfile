@@ -12,9 +12,11 @@ RUN git clone https://github.com/google/googletest.git \
     && cmake --build . --target install \
     && rm /git/googletest -rf
 
-WORKDIR /
-ADD / /code
-RUN mkdir build
-WORKDIR build
-RUN cmake -DTEST_ENABLED=ON  -DEXAMPLE_ENABLED=ON /code
-RUN cmake --build . -- -j 2
+COPY / /code
+
+WORKDIR /code/build
+
+RUN cmake -DTEST_ENABLED=OFF -DEXAMPLE_ENABLED=OFF -DENABLE_VENDOR_SRC=OFF ..
+RUN cmake --build . --target install -j 2
+
+CMD ["/bin/bash"]
