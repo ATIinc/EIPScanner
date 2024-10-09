@@ -5,8 +5,7 @@ services:
       context: ..
       dockerfile: Dockerfile
       # Do not build the library for the devcontainer
-      target: prepareTesting
+      target: build_devcontainer
     volumes:
-      - ..:/workspaces/eipscanner
+      - ..:/workspaces/eipscanner/
     network_mode: "host"
-    privileged: false
