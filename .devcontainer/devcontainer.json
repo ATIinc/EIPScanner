@@ -6,7 +6,7 @@
 		"docker-compose.yaml"
 	],
 	"service": "eipscanner-dev",
-	"workspaceFolder": "/workspaces/devcontainer",
+	"workspaceFolder": "/workspaces/eipscanner",
 		// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	"remoteUser": "vscode",
 
