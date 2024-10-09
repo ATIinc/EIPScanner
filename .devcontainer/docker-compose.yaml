@@ -7,5 +7,5 @@ services:
       # Do not build the library for the devcontainer
       target: build_devcontainer
     volumes:
-      - ..:/workspaces/eipscanner/
+      - ..:/workspaces/eipscanner/:cached
     network_mode: "host"

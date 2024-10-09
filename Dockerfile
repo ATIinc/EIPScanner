@@ -30,7 +30,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 USER ${USERNAME}
 
-WORKDIR /workspaces/eipscanner/
+WORKDIR /home/${USERNAME}
 
 
 # Create a new stage target that installs the EIPScanner library

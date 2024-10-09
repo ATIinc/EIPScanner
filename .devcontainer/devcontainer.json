@@ -8,7 +8,7 @@
 	"service": "eipscanner-dev",
 	"workspaceFolder": "/workspaces/devcontainer",
 		// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "vscode",
+	// "remoteUser": "vscode",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
