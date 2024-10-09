@@ -1,0 +1,12 @@
+services:
+  eipscanner-dev:
+    container_name: eipscanner_devcontainer
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      # Do not build the library for the devcontainer
+      target: prepareTesting
+    volumes:
+      - ..:/workspaces/eipscanner
+    network_mode: "host"
+    privileged: false
