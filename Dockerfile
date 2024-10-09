@@ -21,7 +21,6 @@ ARG USER_GID=$USER_UID
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    #
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
     && apt-get install -y sudo \
@@ -30,7 +29,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 USER ${USERNAME}
 
-WORKDIR /home/${USERNAME}
+WORKDIR /workspaces/devcontainer
 
 
 # Create a new stage target that installs the EIPScanner library

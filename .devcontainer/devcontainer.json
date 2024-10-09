@@ -8,7 +8,7 @@
 	"service": "eipscanner-dev",
 	"workspaceFolder": "/workspaces/devcontainer",
 		// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "vscode",
+	"remoteUser": "vscode",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -22,17 +22,17 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			// "settings": {
-			// 	"terminal.integrated.defaultProfile.linux": "bash",
-			// 	"terminal.integrated.profiles.linux": {
-			// 		"bash": {
-			// 			"path": "/bin/bash"
-			// 		}
-			// 	}
-			// },
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					}
+				}
+			},
 			"extensions": [
-				// "GitHub.copilot",
-				// "twxs.cmake"
+				"GitHub.copilot",
+				"twxs.cmake"
 			]
 		}
 	}
