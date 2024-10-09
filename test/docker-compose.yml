@@ -4,7 +4,7 @@ services:
   eip_scanner:
     build: .
     volumes:
-      - .:/code
+      - ..:/code
     command: examples/discovery_example
     networks:
       testing_net:
