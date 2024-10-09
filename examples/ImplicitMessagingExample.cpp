@@ -38,7 +38,11 @@ int main() {
 
   auto si = std::make_shared<SessionInfo>("172.28.1.3", 0xAF12);
 
-  // Implicit messaging
+  // Implicit messaging (requires using an Explicit Message to set the parameters)
+
+  
+
+
   ConnectionManager connectionManager;
 
   ConnectionParameters parameters;

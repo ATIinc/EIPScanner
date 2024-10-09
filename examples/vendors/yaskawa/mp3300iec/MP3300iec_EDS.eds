@@ -1,0 +1,702 @@
+$ EZ-EDS Version 3.21.1.20161208 Generated Electronic Data Sheet
+
+[File]
+        DescText = "EDS file for MP3300 series iec controllers";
+        CreateDate = 05-20-2009;
+        CreateTime = 10:57:13;
+        ModDate = 08-08-2017;
+        ModTime = 10:36:45;
+        Revision = 1.3;
+        HomeURL = " http://www.yaskawa.com";
+
+[Device]
+        VendCode = 44;
+        VendName = "Yaskawa Electric America";
+        ProdType = 0;
+        ProdTypeStr = "Generic Device";
+        ProdCode = 132;
+        MajRev = 2;
+        MinRev = 4;
+        ProdName = "MP3300iec";
+        Catalog = "PMC-U-MP33*****";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Assembly]
+        Object_Name = "Assembly Object";
+        Object_Class_Code = 0x04;
+        Assem1 =
+                "Input Assembly 111",
+                "20 04 24 6F 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem1;
+        Assem2 =
+                "Input Assembly 112",
+                "20 04 24 70 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem2;
+        Assem3 =
+                "Input Assembly 113",
+                "20 04 24 71 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem3;
+        Assem4 =
+                "Input Assembly 114",
+                "20 04 24 72 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem4;
+        Assem5 =
+                "Input Assembly 115",
+                "20 04 24 73 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem5;
+        Assem6 =
+                "Input Assembly 116",
+                "20 04 24 74 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem6;
+		Assem7 =
+                "Input Assembly 117",
+                "20 04 24 75 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem7;
+		Assem8 =
+                "Input Assembly 118",
+                "20 04 24 76 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem8;
+		Assem9 =
+                "Input Assembly 119",
+                "20 04 24 77 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem9;
+		Assem10 =
+                "Input Assembly 120",
+                "20 04 24 78 30 03",
+                496,
+                0x0000,
+                ,,
+                
+				4096,Assem10;
+		Assem11 =
+                "Input Assembly 121",
+                "20 04 24 79 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem11;
+		Assem12 =
+                "Input Assembly 122",
+                "20 04 24 7A 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem12;
+		Assem13 =
+                "Input Assembly 123",
+                "20 04 24 7B 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem13;
+		Assem14 =
+                "Input Assembly 124",
+                "20 04 24 7C 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem14;
+		Assem15 =
+                "Input Assembly 125",
+                "20 04 24 7D 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem15;
+		Assem16 =
+                "Input Assembly 126",
+                "20 04 24 7E 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem16;
+		Assem17 =
+                "Output Assembly 91",
+                "20 04 24 5B 30 03",
+                496,
+                0x0000,
+                ,,
+                41096,Assem91;
+		Assem18 =
+                "Output Assembly 92",
+                "20 04 24 5C 30 03",
+                496,
+                0x0000,
+                ,,
+                14096,Assem18;
+		Assem19 =
+                "Output Assembly 93",
+                "20 04 24 5D 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem19;
+		Assem20 =
+                "Output Assembly 94",
+                "20 04 24 5E 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem20;
+		Assem21 =
+                "Output Assembly 95",
+                "20 04 24 5F 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem21;
+		Assem22 =
+                "Output Assembly 96",
+                "20 04 24 60 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem22;
+		Assem23 =
+                "Output Assembly 97",
+                "20 04 24 61 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem23;
+		Assem24 =
+                "Output Assembly 98",
+                "20 04 24 62 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem24;
+		Assem25 =
+                "Output Assembly 99",
+                "20 04 24 63 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem25;
+		Assem26 =
+                "Output Assembly 100",
+                "20 04 24 64 30 03",
+                496,
+                0x0000,
+                ,,
+                4096,Assem26;
+        Assem27 =
+                "Output Assembly 101",
+                "20 04 24 65 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem27;
+        Assem28 =
+                "Output Assembly 102",
+                "20 04 24 66 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem28;
+        Assem29 =
+                "Output Assembly 103",
+                "20 04 24 67 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem29;
+        Assem30 =
+                "Output Assembly 104",
+                "20 04 24 68 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem30;
+        Assem31 =
+                "Output Assembly 105",
+                "20 04 24 69 30 03",
+                128,
+                0x0000,
+                ,,
+                1024,Assem31;
+        Assem32 =
+                "Output Assembly 106",
+                "20 04 24 6A 30 03",
+                256,
+                0x0000,
+                ,,
+                2048,Assem32;
+        Assem33 =
+                "Input Only Heartbeat",
+                "20 04 24 80 30 03",
+                0,
+                0x0000,
+                ,,
+                0,Assem33;
+        Assem34 =
+                "Listen Only Heartbeat",
+                "20 04 24 81 30 03",
+                0,
+                0x0000,
+                ,,
+                0,Assem34;
+
+[Connection Manager]
+        Object_Name = "Connection Manager Object";
+        Object_Class_Code = 0x06;
+        Connection1 =
+                0x04010002,             $ TRIGGER AND TRANSPORT MASK
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 0  (class 0:null)
+                                        $        1 = 1  (class 1:dup. detect)
+                                        $        2 = 0  (class 2:acknowledged)
+                                        $        3 = 0  (class 3:verified)
+                                        $        4 = 1  (class 4:non-block)
+                                        $        5 = 0  (class 5:non-block, frag)
+                                        $        6 = 0  (class 6:multicast, frag)
+                                        $   7-15 = 0  (class  :reserved)
+                                        $      16 = 1  (trigger: cyclic)
+                                        $      17 = 0  (trigger: cos)
+                                        $      18 = 0  (trigger: appl)
+                                        $ 19-23 = 0  (trigger: reserved (must be zero))
+                                        $      24 = 0  (transport type: listen-only)
+                                        $      25 = 0  (transport type: input-only)
+                                        $      26 = 1  (transport type: exclusive-owner)
+                                        $      27 = 0  (transport type: redundant-owner)
+                                        $ 28-30 = 0  (reserved (must be zero))
+                                        $      31 = 1  (client = 0 / server = 1)
+                0x77640405,             $ CONNECTION PARAMETERS BIT ASSIGNMENTS
+
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 1  (O=>T fixed)
+                                        $        1 = 0  (O=>T variable)
+                                        $        2 = 1  (T=>O fixed)
+                                        $        3 = 0  (T=>O variable)
+                                        $     4-7 = 0  (reserved (must be zero))
+                                        $   8-10 = 4  (O=>T header (4 byte run/idle))
+                                        $      11 = 0  (reserved (must be zero))
+                                        $ 12-14 = 0  (T=>O header (pure data))
+                                        $      15 = 0  (reserved (must be zero))
+                                        $      16 = 0  (O=>T connection type: NULL)
+                                        $      17 = 0  (O=>T connection type: MULTI)
+                                        $      18 = 1  (O=>T connection type: P2P)
+                                        $      19 = 0  (O=>T connection type: RSVD)
+                                        $      20 = 0  (T=>O connection type: NULL)
+                                        $      21 = 1  (T=>O connection type: MULTI)
+                                        $      22 = 0  (T=>O connection type: P2P)
+                                        $      23 = 0  (T=>O connection type: RSVD)
+                                        $      24 = 0  (O=>T priority: LOW)
+                                        $      25 = 0  (O=>T priority: HIGH)
+                                        $      26 = 1  (O=>T priority: SCHEDULED)
+                                        $      27 = 0  (O=>T priority: RSVD)
+                                        $      28 = 0  (T=>O priority: LOW)
+                                        $      29 = 0  (T=>O priority: HIGH)
+                                        $      30 = 1  (T=>O priority: SCHEDULED)
+                                        $      31 = 0  (T=>O priority: RSVD)
+                ,128,,                  $ O=>T RPI, size in bytes, format
+                ,128,,                  $ T=>O RPI, size in bytes, format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Exclusive Owner 101-111",    $ connection name
+                "",                     $ Help string
+                "20 04 2C 6F 2C 65";    $ exclusive owner path
+        Connection2 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = transport type: listen-only
+                                        $ 25      = transport type: input-only
+                                        $ 26      = transport type: exclusive-owner
+                                        $ 27      = transport type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Client = 0 / Server = 1
+                0x77640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,256,,                  $ O->T RPI, size, format
+                ,256,,                  $ T->O RPI, size, format
+                ,,                      $ config #1 size, format
+                ,,                      $ config #2 size, format
+                "Exclusive Owner 102-112",    $ Connection Name
+                "",                     $ help string
+                "20 04 2C 70 2C 66";    $ Path
+        Connection3 =
+                0x04010002,             $ TRIGGER AND TRANSPORT MASK
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 0  (class 0:null)
+                                        $        1 = 1  (class 1:dup. detect)
+                                        $        2 = 0  (class 2:acknowledged)
+                                        $        3 = 0  (class 3:verified)
+                                        $        4 = 1  (class 4:non-block)
+                                        $        5 = 0  (class 5:non-block, frag)
+                                        $        6 = 0  (class 6:multicast, frag)
+                                        $   7-15 = 0  (class  :reserved)
+                                        $      16 = 1  (trigger: cyclic)
+                                        $      17 = 0  (trigger: cos)
+                                        $      18 = 0  (trigger: appl)
+                                        $ 19-23 = 0  (trigger: reserved (must be zero))
+                                        $      24 = 0  (transport type: listen-only)
+                                        $      25 = 0  (transport type: input-only)
+                                        $      26 = 1  (transport type: exclusive-owner)
+                                        $      27 = 0  (transport type: redundant-owner)
+                                        $ 28-30 = 0  (reserved (must be zero))
+                                        $      31 = 1  (client = 0 / server = 1)
+                0x77640405,             $ CONNECTION PARAMETERS BIT ASSIGNMENTS
+
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 1  (O=>T fixed)
+                                        $        1 = 0  (O=>T variable)
+                                        $        2 = 1  (T=>O fixed)
+                                        $        3 = 0  (T=>O variable)
+                                        $     4-7 = 0  (reserved (must be zero))
+                                        $   8-10 = 4  (O=>T header (4 byte run/idle))
+                                        $      11 = 0  (reserved (must be zero))
+                                        $ 12-14 = 0  (T=>O header (pure data))
+                                        $      15 = 0  (reserved (must be zero))
+                                        $      16 = 0  (O=>T connection type: NULL)
+                                        $      17 = 0  (O=>T connection type: MULTI)
+                                        $      18 = 1  (O=>T connection type: P2P)
+                                        $      19 = 0  (O=>T connection type: RSVD)
+                                        $      20 = 0  (T=>O connection type: NULL)
+                                        $      21 = 1  (T=>O connection type: MULTI)
+                                        $      22 = 0  (T=>O connection type: P2P)
+                                        $      23 = 0  (T=>O connection type: RSVD)
+                                        $      24 = 0  (O=>T priority: LOW)
+                                        $      25 = 0  (O=>T priority: HIGH)
+                                        $      26 = 1  (O=>T priority: SCHEDULED)
+                                        $      27 = 0  (O=>T priority: RSVD)
+                                        $      28 = 0  (T=>O priority: LOW)
+                                        $      29 = 0  (T=>O priority: HIGH)
+                                        $      30 = 1  (T=>O priority: SCHEDULED)
+                                        $      31 = 0  (T=>O priority: RSVD)
+                ,128,,                  $ O=>T RPI, size in bytes, format
+                ,128,,                  $ T=>O RPI, size in bytes, format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Exclusive Owner 103-113",    $ connection name
+                "",                     $ Help string
+                "20 04 2C 71 2C 67";    $ exclusive owner path
+        Connection4 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = transport type: listen-only
+                                        $ 25      = transport type: input-only
+                                        $ 26      = transport type: exclusive-owner
+                                        $ 27      = transport type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Client = 0 / Server = 1
+                0x77640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,256,,                  $ O->T RPI, size, format
+                ,256,,                  $ T->O RPI, size, format
+                ,,                      $ config #1 size, format
+                ,,                      $ config #2 size, format
+                "Exclusive Owner 104-114",    $ Connection Name
+                "",                     $ help string
+                "20 04 2C 72 2C 68";    $ Path
+        Connection5 =
+                0x04010002,             $ TRIGGER AND TRANSPORT MASK
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 0  (class 0:null)
+                                        $        1 = 1  (class 1:dup. detect)
+                                        $        2 = 0  (class 2:acknowledged)
+                                        $        3 = 0  (class 3:verified)
+                                        $        4 = 1  (class 4:non-block)
+                                        $        5 = 0  (class 5:non-block, frag)
+                                        $        6 = 0  (class 6:multicast, frag)
+                                        $   7-15 = 0  (class  :reserved)
+                                        $      16 = 1  (trigger: cyclic)
+                                        $      17 = 0  (trigger: cos)
+                                        $      18 = 0  (trigger: appl)
+                                        $ 19-23 = 0  (trigger: reserved (must be zero))
+                                        $      24 = 0  (transport type: listen-only)
+                                        $      25 = 0  (transport type: input-only)
+                                        $      26 = 1  (transport type: exclusive-owner)
+                                        $      27 = 0  (transport type: redundant-owner)
+                                        $ 28-30 = 0  (reserved (must be zero))
+                                        $      31 = 1  (client = 0 / server = 1)
+                0x77640405,             $ CONNECTION PARAMETERS BIT ASSIGNMENTS
+
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 1  (O=>T fixed)
+                                        $        1 = 0  (O=>T variable)
+                                        $        2 = 1  (T=>O fixed)
+                                        $        3 = 0  (T=>O variable)
+                                        $     4-7 = 0  (reserved (must be zero))
+                                        $   8-10 = 4  (O=>T header (4 byte run/idle))
+                                        $      11 = 0  (reserved (must be zero))
+                                        $ 12-14 = 0  (T=>O header (pure data))
+                                        $      15 = 0  (reserved (must be zero))
+                                        $      16 = 0  (O=>T connection type: NULL)
+                                        $      17 = 0  (O=>T connection type: MULTI)
+                                        $      18 = 1  (O=>T connection type: P2P)
+                                        $      19 = 0  (O=>T connection type: RSVD)
+                                        $      20 = 0  (T=>O connection type: NULL)
+                                        $      21 = 1  (T=>O connection type: MULTI)
+                                        $      22 = 0  (T=>O connection type: P2P)
+                                        $      23 = 0  (T=>O connection type: RSVD)
+                                        $      24 = 0  (O=>T priority: LOW)
+                                        $      25 = 0  (O=>T priority: HIGH)
+                                        $      26 = 1  (O=>T priority: SCHEDULED)
+                                        $      27 = 0  (O=>T priority: RSVD)
+                                        $      28 = 0  (T=>O priority: LOW)
+                                        $      29 = 0  (T=>O priority: HIGH)
+                                        $      30 = 1  (T=>O priority: SCHEDULED)
+                                        $      31 = 0  (T=>O priority: RSVD)
+                ,128,,                  $ O=>T RPI, size in bytes, format
+                ,128,,                  $ T=>O RPI, size in bytes, format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Exclusive Owner 105-115",    $ connection name
+                "",                     $ Help string
+                "20 04 2C 73 2C 69";    $ exclusive owner path
+        Connection6 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = transport type: listen-only
+                                        $ 25      = transport type: input-only
+                                        $ 26      = transport type: exclusive-owner
+                                        $ 27      = transport type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Client = 0 / Server = 1
+                0x77640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,256,,                  $ O->T RPI, size, format
+                ,256,,                  $ T->O RPI, size, format
+                ,,                      $ config #1 size, format
+                ,,                      $ config #2 size, format
+                "Exclusive Owner 106-116",    $ Connection Name
+                "",                     $ help string
+                "20 04 2C 74 2C 6A";    $ Path
+        Connection7 =
+                0x82010002,             $ TRIGGER AND TRANSPORT MASK
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 0  (class 0:null)
+                                        $        1 = 1  (class 1:dup. detect)
+                                        $        2 = 0  (class 2:acknowledged)
+                                        $        3 = 0  (class 3:verified)
+                                        $        4 = 1  (class 4:non-block)
+                                        $        5 = 0  (class 5:non-block, frag)
+                                        $        6 = 0  (class 6:multicast, frag)
+                                        $   7-15 = 0  (class  :reserved)
+                                        $      16 = 1  (trigger: cyclic)
+                                        $      17 = 0  (trigger: cos)
+                                        $      18 = 0  (trigger: appl)
+                                        $ 19-23 = 0  (trigger: reserved (must be zero))
+                                        $      24 = 0  (transport type: listen-only)
+                                        $      25 = 0  (transport type: input-only)
+                                        $      26 = 1  (transport type: exclusive-owner)
+                                        $      27 = 0  (transport type: redundant-owner)
+                                        $ 28-30 = 0  (reserved (must be zero))
+                                        $      31 = 1  (client = 0 / server = 1)
+                0x77640005,             $ CONNECTION PARAMETERS BIT ASSIGNMENTS
+
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 1  (O=>T fixed)
+                                        $        1 = 0  (O=>T variable)
+                                        $        2 = 1  (T=>O fixed)
+                                        $        3 = 0  (T=>O variable)
+                                        $     4-7 = 0  (reserved (must be zero))
+                                        $   8-10 = 4  (O=>T header (4 byte run/idle))
+                                        $      11 = 0  (reserved (must be zero))
+                                        $ 12-14 = 0  (T=>O header (pure data))
+                                        $      15 = 0  (reserved (must be zero))
+                                        $      16 = 0  (O=>T connection type: NULL)
+                                        $      17 = 0  (O=>T connection type: MULTI)
+                                        $      18 = 1  (O=>T connection type: P2P)
+                                        $      19 = 0  (O=>T connection type: RSVD)
+                                        $      20 = 0  (T=>O connection type: NULL)
+                                        $      21 = 1  (T=>O connection type: MULTI)
+                                        $      22 = 0  (T=>O connection type: P2P)
+                                        $      23 = 0  (T=>O connection type: RSVD)
+                                        $      24 = 0  (O=>T priority: LOW)
+                                        $      25 = 0  (O=>T priority: HIGH)
+                                        $      26 = 1  (O=>T priority: SCHEDULED)
+                                        $      27 = 0  (O=>T priority: RSVD)
+                                        $      28 = 0  (T=>O priority: LOW)
+                                        $      29 = 0  (T=>O priority: HIGH)
+                                        $      30 = 1  (T=>O priority: SCHEDULED)
+                                        $      31 = 0  (T=>O priority: RSVD)
+                ,0,,                    $ O=>T RPI, size in bytes, format
+                ,6,,                    $ T=>O RPI, size in bytes, format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Input Only",           $ connection name
+                "",                     $ Help string
+                "20 04 24 96 2C 80 2C 64";    $ exclusive owner path
+        Connection8 =
+                0x81010002,             $ TRIGGER AND TRANSPORT MASK
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 0  (class 0:null)
+                                        $        1 = 1  (class 1:dup. detect)
+                                        $        2 = 0  (class 2:acknowledged)
+                                        $        3 = 0  (class 3:verified)
+                                        $        4 = 1  (class 4:non-block)
+                                        $        5 = 0  (class 5:non-block, frag)
+                                        $        6 = 0  (class 6:multicast, frag)
+                                        $   7-15 = 0  (class  :reserved)
+                                        $      16 = 1  (trigger: cyclic)
+                                        $      17 = 0  (trigger: cos)
+                                        $      18 = 0  (trigger: appl)
+                                        $ 19-23 = 0  (trigger: reserved (must be zero))
+                                        $      24 = 0  (transport type: listen-only)
+                                        $      25 = 0  (transport type: input-only)
+                                        $      26 = 1  (transport type: exclusive-owner)
+                                        $      27 = 0  (transport type: redundant-owner)
+                                        $ 28-30 = 0  (reserved (must be zero))
+                                        $      31 = 1  (client = 0 / server = 1)
+                0x77240005,             $ CONNECTION PARAMETERS BIT ASSIGNMENTS
+
+                                        $     BIT=VAL DESCRIPTION
+                                        $        0 = 1  (O=>T fixed)
+                                        $        1 = 0  (O=>T variable)
+                                        $        2 = 1  (T=>O fixed)
+                                        $        3 = 0  (T=>O variable)
+                                        $     4-7 = 0  (reserved (must be zero))
+                                        $   8-10 = 4  (O=>T header (4 byte run/idle))
+                                        $      11 = 0  (reserved (must be zero))
+                                        $ 12-14 = 0  (T=>O header (pure data))
+                                        $      15 = 0  (reserved (must be zero))
+                                        $      16 = 0  (O=>T connection type: NULL)
+                                        $      17 = 0  (O=>T connection type: MULTI)
+                                        $      18 = 1  (O=>T connection type: P2P)
+                                        $      19 = 0  (O=>T connection type: RSVD)
+                                        $      20 = 0  (T=>O connection type: NULL)
+                                        $      21 = 1  (T=>O connection type: MULTI)
+                                        $      22 = 0  (T=>O connection type: P2P)
+                                        $      23 = 0  (T=>O connection type: RSVD)
+                                        $      24 = 0  (O=>T priority: LOW)
+                                        $      25 = 0  (O=>T priority: HIGH)
+                                        $      26 = 1  (O=>T priority: SCHEDULED)
+                                        $      27 = 0  (O=>T priority: RSVD)
+                                        $      28 = 0  (T=>O priority: LOW)
+                                        $      29 = 0  (T=>O priority: HIGH)
+                                        $      30 = 1  (T=>O priority: SCHEDULED)
+                                        $      31 = 0  (T=>O priority: RSVD)
+                ,0,,                    $ O=>T RPI, size in bytes, format
+                ,6,,                    $ T=>O RPI, size in bytes, format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Listen Only",          $ connection name
+                "",                     $ Help string
+                "20 04 24 96 2C 81 2C 64";    $ exclusive owner path
+
+[Port]
+        Object_Name = "Port Object";
+        Object_Class_Code = 0xF4;
+        Port1 =
+                TCP,
+                "EtherNet/IP Port",
+                "20 F5 24 01",
+                1,
+                ;
+
+[Capacity]
+        MaxIOConnections = 64;
+        MaxMsgConnections = 20;
+        MaxConsumersPerMcast = 64;
+        TSpec1 = TxRx, 2, 200;
