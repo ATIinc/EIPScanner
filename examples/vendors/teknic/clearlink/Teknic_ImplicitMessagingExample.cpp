@@ -58,6 +58,22 @@ enum ClearlinkNetworkConnectionParams : CipUdint {
   T2O_SCHEDULED_PRIORITY = (1 << 30),
 };
 
+void dataListenerCallback(eipScanner::cip::CipUdint realTimeHeader, eipScanner::cip::CipUint sequence, const std::vector<uint8_t>& data)
+{
+  std::ostringstream ss;
+  ss << "secNum=" << sequence << " data=";
+  for (auto &byte : data) {
+    ss << "[" << std::hex << (int) byte << "]";
+  }
+
+  Logger(LogLevel::INFO) << "Received: " << ss.str(); 
+}
+
+void closeListenerCallback()
+{ 
+  Logger(LogLevel::INFO) << "Closed"; 
+}
+
 
 int main()
 {
@@ -85,9 +101,12 @@ int main()
         * '280'       : size of the Assembly in bytes
         * 'Assem112'  : refers to the Assembly defined in the '[Assembly]' section of the EDS file
       
-      * NOTE: The ClearLink object reference has a more user-friendly breakdown of the Assembly (instance 112)
+      * NOTE: The ClearLink object reference has a more user-friendly breakdown of the Assembly (instance 112) -- Step & Dir Output Assembly
         * https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=19
-    
+        * 
+    - The T20 (Target => Originator) assembly is defined under 'Connection1'
+      * NOTE: The ClearLink object reference has a more user-friendly breakdown of the Assembly (instance 100) -- Step & Dir Input Assembly
+        * https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=19   
 
   */
 
@@ -99,13 +118,13 @@ int main()
   parameters.originatorVendorId = 342;        // Vendor ID of the Scanner (using default)
   parameters.originatorSerialNumber = 32423;  // Serial # of the Scanner (using default)
 
-  parameters.o2tNetworkConnectionParams |= (1 << 18); 
+  parameters.o2tNetworkConnectionParams |= NetworkConnectionParams::P2P; 
   parameters.o2tNetworkConnectionParams |= NetworkConnectionParams::SCHEDULED_PRIORITY;
-  parameters.o2tNetworkConnectionParams |= 280; // size of Assm112 = 280 (defined more clearly in )
+  parameters.o2tNetworkConnectionParams |= 280; // size of Assm112 = 280 (Step & Direction Output Assembly)
 
   parameters.t2oNetworkConnectionParams |= NetworkConnectionParams::P2P;
   parameters.t2oNetworkConnectionParams |= NetworkConnectionParams::SCHEDULED_PRIORITY;
-  parameters.t2oNetworkConnectionParams |= 332; // size of Assm100 = 332
+  parameters.t2oNetworkConnectionParams |= 332; // size of Assm100 = 332 (Step & DIrection Input Assembly)
 
   //  0x20 0x04 CONFIG_ASSEMBLY_ID 0x2C OUTPUT_ASSEMBLY_ID 0x2C INPUT_ASSEMBLY
   parameters.connectionPath = {0x20, 0x04, 0x24, 0x96, 0x2C, 0x70, 0x2C, 0x64}; // exclusive owner path (includes Assm112 and Assem100)
@@ -113,25 +132,18 @@ int main()
   parameters.originatorSerialNumber = 0x12345;
   parameters.o2tRPI = 10000;                // saved as Param999 which has the following line: '1000,1000000,10000,     $ min, max, default data values' 
   parameters.t2oRPI = 10000;
+
+  // Class 1 is Implicit Messaging and Class 3 is Explicit Messaging
   parameters.transportTypeTrigger |= NetworkConnectionParams::CLASS1;
 
-  auto io = connectionManager.forwardOpen(sessionInfo, parameters);
+  eipScanner::IOConnection::WPtr io = connectionManager.forwardOpen(sessionInfo, parameters);
   if (auto ptr = io.lock())
   {
-    ptr->setDataToSend(std::vector<uint8_t>(32));
+    ptr->setDataToSend(std::vector<uint8_t>(280));
 
-    ptr->setReceiveDataListener([](auto realTimeHeader, auto sequence, auto data)
-                                {
-      std::ostringstream ss;
-      ss << "secNum=" << sequence << " data=";
-      for (auto &byte : data) {
-        ss << "[" << std::hex << (int) byte << "]";
-      }
+    ptr->setReceiveDataListener(dataListenerCallback);
 
-      Logger(LogLevel::INFO) << "Received: " << ss.str(); });
-
-    ptr->setCloseListener([]()
-                          { Logger(LogLevel::INFO) << "Closed"; });
+    ptr->setCloseListener(closeListenerCallback);
   }
 
   int count = 200;

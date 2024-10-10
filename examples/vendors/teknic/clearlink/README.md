@@ -19,4 +19,15 @@ There are a number of object assemblies that are reserved for Ethernet/IP (https
 | ConnectionManager       | 0x6   | Handles initializing the Requested Packet Interval and sets assemblies  |
 | TCP/IP Interface Object | 0xF5  |             |
 | Ethernet Link Object    | OxF6  |             |
-* 
+
+
+## Using the EIPScanner Library
+
+https://github.com/nimbuscontrols/EIPScanner/issues/36
+
+* Great explanation with links: https://github.com/nimbuscontrols/EIPScanner/issues/36#issuecomment-747524312
+
+
+## Forward Requests
+
+There are Forward Open request and Large Forward Open requests depending on the request size. 
