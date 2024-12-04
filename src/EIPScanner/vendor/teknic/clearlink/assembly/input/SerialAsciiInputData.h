@@ -7,8 +7,8 @@
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_MOTORINPUTDATA_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_MOTORINPUTDATA_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_SERIALASCIIINPUTDATA_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_SERIALASCIIINPUTDATA_H
 
 #include "EIPScanner/cip/Types.h"
 
@@ -22,34 +22,36 @@ namespace assembly {
 namespace input {
 
 /**
- * @class MotorInputData
+ * @class SerialAsciiInputData
  *
  * @brief Implements the Step & Direction Motor Input Data section
  */
-class MotorInputData : public BaseAssemblyData {
+class SerialAsciiInputData : public BaseAssemblyData {
 public:
   /**
    * @brief Creates an instance that reads a buffer
    * @param data
    */
-  MotorInputData();
+  SerialAsciiInputData();
 
 private:
   virtual std::vector<DataFieldReference> _getDataFieldReferences();
 
   // CONSTANTS
-  static const size_t ENCODER_STATUS_SIZE = 1; // 2 bits
-  static const size_t PADDING_BYTES_SIZE = 2;
+
+  // NOTE: The buffer can't handle uint32_t values (USINT) so this array is of
+  // (uint16_t) values and
+  //    has double the length to make up for it
+  static const size_t INPUT_DATA_SIZE = 128 * 2;
 
   // Actual field members
-  eipScanner::cip::CipDint _commandedPosition;
-  eipScanner::cip::CipDint _commandedVelocity;
-  eipScanner::cip::CipDint _targetPosition;
-  eipScanner::cip::CipDint _targetVelocity;
-  eipScanner::cip::CipDint _capturedPosition;
-  eipScanner::cip::CipReal _measuredTorque;
-  eipScanner::cip::CipDword _motorStatus;
-  eipScanner::cip::CipDword _motorShutdowns;
+  eipScanner::cip::CipDword _serialStatus;
+  eipScanner::cip::CipUdint _outputCharCount;
+  eipScanner::cip::CipUdint _inputCharCount;
+  eipScanner::cip::CipUdint _outputSequenceAck;
+  eipScanner::cip::CipUdint _inputSize;
+  eipScanner::cip::CipUdint _inputSequence;
+  std::vector<eipScanner::cip::CipUint> _inputData;
 };
 
 } // namespace input
@@ -59,4 +61,4 @@ private:
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_MOTORINPUTDATA_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_SERIALASCIIINPUTDATA_H

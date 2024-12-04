@@ -396,13 +396,18 @@
   },
   {
     "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
     "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp",
     "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp"
   },
   {
     "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
-    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp"
   },
   {
     "directory": "/workspaces/eipscanner/build/test",
@@ -726,12 +731,17 @@
   },
   {
     "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
     "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp",
     "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp"
   },
   {
     "directory": "/workspaces/eipscanner/build/test",
-    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
-    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.cpp"
   }
 ]
