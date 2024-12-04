@@ -53,7 +53,7 @@ private:
   static const size_t AIP_VALUE_SIZE = 4;
   static const size_t AIOP_STATUS_SIZE = 2; // 5 bits
   static const size_t DOP_STATUS_SIZE = 2;  // 6 bits
-  static const size_t PADDING_SIZE = 2;
+  static const size_t PADDING_BYTES_SIZE = 2;
 
   // Actual field members
   std::vector<eipScanner::cip::CipBool> _dipValue;
@@ -66,6 +66,8 @@ private:
   eipScanner::cip::CipUlint _ccioStatus;
   eipScanner::cip::CipSint _ccioBoardCount;
   std::vector<eipScanner::cip::CipByte> _reservedPadding;
+
+  friend class TestIOInputData;
 };
 } // namespace utils
 } // namespace clearlink

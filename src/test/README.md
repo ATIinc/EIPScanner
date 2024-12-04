@@ -21,4 +21,5 @@ cmake --build .
 
 # Testing the Data 
 
-Can use: `./test/test_eipscanner --gtest_filter=TestIOInputData.*`
+Can use: `./test/test_eipscanner --gtest_filter=TestIOInputData.*:TestEncoderInputData.*`
+* And add to it with future classes

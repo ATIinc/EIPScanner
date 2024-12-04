@@ -1,32 +1,31 @@
 //
 // Created by Jan Ritzenhoff on 12/04/24.
 //
+#include <gtest/gtest.h>
 
 #include "EIPScanner/cip/Types.h"
 #include "EIPScanner/vendor/teknic/clearlink/utils/IOInputData.h"
-#include "Mocks.h" // contains the TMockMessageRouter class
-#include <gtest/gtest.h>
 
 using namespace eipScanner;
 using namespace eipScanner::vendor::teknic::clearlink::utils;
 
-class TestIOInputData : public ::testing::Test {
+class TestIOInputData : public ::testing::Test, public IOInputData {
 public:
-  void SetUp() override { _ioInputData = IOInputData(); }
-
-  IOInputData _ioInputData;
+  void SetUp() override { }
 };
 
-TEST_F(TestIOInputData, ShouldCreateBuffer) {
+TEST_F(TestIOInputData, CreateIOInputDataBuffer) {
+
+  IOInputData ioInputData;
 
   // Initialize the IOInputData object
-  _ioInputData.setDipValue({0x6, 0x2});
-  _ioInputData.setDipStatus({0x2});
-  _ioInputData.setAipValue({0x0, 0x9});
+  ioInputData.setDipValue({0x6, 0x2});
+  ioInputData.setDipStatus({0x2});
+  ioInputData.setAipValue({0x0, 0x9});
 
   // Write the data to a buffer
   eipScanner::utils::Buffer actualBuffer;
-  actualBuffer << _ioInputData;
+  actualBuffer << ioInputData;
 
   // Compare the actual buffer to the expected
   std::vector<eipScanner::cip::CipBool> dipValue = {0x6, 0x2};
@@ -43,7 +42,8 @@ TEST_F(TestIOInputData, ShouldCreateBuffer) {
   EXPECT_EQ(expectedBuffer.data(), actualBuffer.data());
 }
 
-TEST_F(TestIOInputData, ShouldReadBuffer) {
+TEST_F(TestIOInputData, ReadIOInputDataBuffer) {
+  IOInputData ioInputData;
 
   std::vector<eipScanner::cip::CipBool> dipValue = {0x2, 0x8};
   std::vector<eipScanner::cip::CipBool> dipStatus = {0x8, 0x0};
@@ -52,9 +52,9 @@ TEST_F(TestIOInputData, ShouldReadBuffer) {
   eipScanner::utils::Buffer startingBuffer;
   startingBuffer << dipValue << dipStatus << aipValue;
 
-  startingBuffer >> _ioInputData;
+  startingBuffer >> ioInputData;
 
-  EXPECT_EQ(dipValue, _ioInputData.getDipValue());
-  EXPECT_EQ(dipStatus, _ioInputData.getDipStatus());
-  EXPECT_EQ(aipValue, _ioInputData.getAipValue());
+  EXPECT_EQ(dipValue, ioInputData.getDipValue());
+  EXPECT_EQ(dipStatus, ioInputData.getDipStatus());
+  EXPECT_EQ(aipValue, ioInputData.getAipValue());
 }

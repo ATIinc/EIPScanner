@@ -13,7 +13,7 @@ IOInputData::IOInputData()
       _dipStatus(DIP_STATUS_SIZE), _aipValue(AIP_VALUE_SIZE),
       _aiopStatus(AIOP_STATUS_SIZE), _dopStatus(DOP_STATUS_SIZE),
       _ccioInputValue(), _ccioStatus(), _ccioBoardCount(),
-      _reservedPadding(PADDING_SIZE) {}
+      _reservedPadding(PADDING_BYTES_SIZE) {}
 
 std::vector<BaseAssemblyData::ReflexiveFieldReference>
 IOInputData::_getAttributeReferences() {
