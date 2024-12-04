@@ -1,10 +1,10 @@
-#include "EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
 
 namespace eipScanner {
 namespace vendor {
 namespace teknic {
 namespace clearlink {
-namespace utils {
+namespace assembly {
 
 BaseAssemblyData::BaseAssemblyData() {}
 
@@ -45,7 +45,7 @@ eipScanner::utils::Buffer &operator>>(eipScanner::utils::Buffer &inStream,
   return inStream;
 }
 
-} // namespace utils
+} // namespace assembly
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor

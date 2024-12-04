@@ -13,9 +13,6 @@
 #include <variant>
 #include <vector>
 
-#include "EIPScanner/BaseObject.h"
-#include "EIPScanner/MessageRouter.h"
-#include "EIPScanner/SessionInfo.h"
 #include "EIPScanner/cip/Types.h"
 
 #include "EIPScanner/utils/Buffer.h"
@@ -24,7 +21,7 @@ namespace eipScanner {
 namespace vendor {
 namespace teknic {
 namespace clearlink {
-namespace utils {
+namespace assembly {
 
 /**
  * @class Base Assembly Data
@@ -71,7 +68,7 @@ protected:
   operator>>(eipScanner::utils::Buffer &inStream,
              BaseAssemblyData &assemblyData);
 };
-} // namespace utils
+} // namespace assembly
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor

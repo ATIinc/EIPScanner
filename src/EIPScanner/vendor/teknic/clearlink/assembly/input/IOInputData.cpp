@@ -1,13 +1,15 @@
 //
 // Created by Jan Ritzenhoff on 8/28/2024
 //
-#include "EIPScanner/vendor/teknic/clearlink/utils/IOInputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.h"
 
 namespace eipScanner {
 namespace vendor {
 namespace teknic {
 namespace clearlink {
-namespace utils {
+namespace assembly {
+namespace input {
+
 IOInputData::IOInputData()
     : BaseAssemblyData(), _dipValue(DIP_VALUE_SIZE),
       _dipStatus(DIP_STATUS_SIZE), _aipValue(AIP_VALUE_SIZE),
@@ -56,7 +58,8 @@ const std::vector<eipScanner::cip::CipUint> IOInputData::getAipValue() {
   return _aipValue;
 }
 
-} // namespace utils
+} // namespace input
+} // namespace assembly
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor

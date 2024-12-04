@@ -7,18 +7,19 @@
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_UTILS_ENCODERINPUTDATA_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_UTILS_ENCODERINPUTDATA_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_ENCODERINPUTDATA_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_ENCODERINPUTDATA_H
 
 #include "EIPScanner/cip/Types.h"
 
-#include "EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
 
 namespace eipScanner {
 namespace vendor {
 namespace teknic {
 namespace clearlink {
-namespace utils {
+namespace assembly {
+namespace input {
 /**
  * @class EncoderInputData
  *
@@ -31,8 +32,6 @@ public:
    * @param data
    */
   EncoderInputData();
-
-  friend class TestEncoderInputData;
 
 private:
   virtual std::vector<DataFieldReference> _getDataFieldReferences();
@@ -49,10 +48,11 @@ private:
   std::vector<eipScanner::cip::CipByte> _reservedPadding;
 };
 
-} // namespace utils
+} // namespace input
+} // namespace assembly
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_UTILS_ENCODERINPUTDATA_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLY_INPUT_ENCODERINPUTDATA_H

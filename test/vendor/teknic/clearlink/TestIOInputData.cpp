@@ -4,10 +4,9 @@
 #include <gtest/gtest.h>
 
 #include "EIPScanner/cip/Types.h"
-#include "EIPScanner/vendor/teknic/clearlink/utils/IOInputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.h"
 
-using namespace eipScanner;
-using namespace eipScanner::vendor::teknic::clearlink::utils;
+using namespace eipScanner::vendor::teknic::clearlink::assembly::input;
 
 class TestIOInputData : public ::testing::Test, public IOInputData {
 public:

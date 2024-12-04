@@ -1,727 +1,737 @@
 [
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/BaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/BaseObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/BaseObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/ConnectionManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/DiscoveryManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/FileObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/FileObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/FileObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/IdentityObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/IOConnection.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IOConnection.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/IOConnection.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/ParameterObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/SessionInfo.cpp.o -c /workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/BaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/BaseObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/BaseObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/ConnectionManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/DiscoveryManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/FileObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/FileObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/FileObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/IdentityObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/IOConnection.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IOConnection.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/IOConnection.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/ParameterObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/SessionInfo.cpp.o -c /workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/BaseSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/EndPoint.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/TCPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/UDPBoundSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/UDPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/Platform.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/utils/Logger.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/utils/Buffer.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultCode.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultParameter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/AttributeBaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorConfigObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorInputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorOutputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/utils/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/IOInputData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/IOInputData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/src/EIPScanner",
-  "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/utils/EncoderInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestCipRevision.cpp.o -c /workspaces/eipscanner/test/cip/TestCipRevision.cpp",
-  "file": "/workspaces/eipscanner/test/cip/TestCipRevision.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestCipString.cpp.o -c /workspaces/eipscanner/test/cip/TestCipString.cpp",
-  "file": "/workspaces/eipscanner/test/cip/TestCipString.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestEPath.cpp.o -c /workspaces/eipscanner/test/cip/TestEPath.cpp",
-  "file": "/workspaces/eipscanner/test/cip/TestEPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestMessageRouterResponse.cpp.o -c /workspaces/eipscanner/test/cip/TestMessageRouterResponse.cpp",
-  "file": "/workspaces/eipscanner/test/cip/TestMessageRouterResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacket.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacket.cpp",
-  "file": "/workspaces/eipscanner/test/eip/TestCommonPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacketItem.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacketItem.cpp",
-  "file": "/workspaces/eipscanner/test/eip/TestCommonPacketItem.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacketItemFactory.cpp",
-  "file": "/workspaces/eipscanner/test/eip/TestCommonPacketItemFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestEncapsPacket.cpp.o -c /workspaces/eipscanner/test/eip/TestEncapsPacket.cpp",
-  "file": "/workspaces/eipscanner/test/eip/TestEncapsPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestEncapsPacketFactory.cpp.o -c /workspaces/eipscanner/test/eip/TestEncapsPacketFactory.cpp",
-  "file": "/workspaces/eipscanner/test/eip/TestEncapsPacketFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/fileObject/TestFileObjectLoadedState.cpp.o -c /workspaces/eipscanner/test/fileObject/TestFileObjectLoadedState.cpp",
-  "file": "/workspaces/eipscanner/test/fileObject/TestFileObjectLoadedState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/fileObject/TestFileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/test/fileObject/TestFileObjectUploadInProgressState.cpp",
-  "file": "/workspaces/eipscanner/test/fileObject/TestFileObjectUploadInProgressState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/sockets/TestEndPoint.cpp.o -c /workspaces/eipscanner/test/sockets/TestEndPoint.cpp",
-  "file": "/workspaces/eipscanner/test/sockets/TestEndPoint.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/utils/TestBuffer.cpp.o -c /workspaces/eipscanner/test/utils/TestBuffer.cpp",
-  "file": "/workspaces/eipscanner/test/utils/TestBuffer.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultManager.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultManager.cpp",
-  "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultObject.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultObject.cpp",
-  "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp",
-  "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/teknic/clearlink/TestIOInputData.cpp.o -c /workspaces/eipscanner/test/vendor/teknic/clearlink/TestIOInputData.cpp",
-  "file": "/workspaces/eipscanner/test/vendor/teknic/clearlink/TestIOInputData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/teknic/clearlink/TestEncoderInputData.cpp.o -c /workspaces/eipscanner/test/vendor/teknic/clearlink/TestEncoderInputData.cpp",
-  "file": "/workspaces/eipscanner/test/vendor/teknic/clearlink/TestEncoderInputData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestDiscoveryManager.cpp.o -c /workspaces/eipscanner/test/TestDiscoveryManager.cpp",
-  "file": "/workspaces/eipscanner/test/TestDiscoveryManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestIdentityObject.cpp.o -c /workspaces/eipscanner/test/TestIdentityObject.cpp",
-  "file": "/workspaces/eipscanner/test/TestIdentityObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestMessageRouter.cpp.o -c /workspaces/eipscanner/test/TestMessageRouter.cpp",
-  "file": "/workspaces/eipscanner/test/TestMessageRouter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestParameterObject.cpp.o -c /workspaces/eipscanner/test/TestParameterObject.cpp",
-  "file": "/workspaces/eipscanner/test/TestParameterObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/test.cpp.o -c /workspaces/eipscanner/test/test.cpp",
-  "file": "/workspaces/eipscanner/test/test.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/BaseSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/EndPoint.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/TCPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/UDPBoundSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/UDPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/Platform.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/utils/Logger.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/utils/Buffer.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/utils/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/IOInputData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/IOInputData.cpp"
-},
-{
-  "directory": "/workspaces/eipscanner/build/test",
-  "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.cpp",
-  "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.cpp"
-}
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/BaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/BaseObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/BaseObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/ConnectionManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/DiscoveryManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/FileObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/FileObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/FileObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/IdentityObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/IOConnection.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IOConnection.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/IOConnection.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/ParameterObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/SessionInfo.cpp.o -c /workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src    -std=gnu++2a -o CMakeFiles/EIPScannerS.dir/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/BaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/BaseObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/BaseObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/ConnectionManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/ConnectionManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/DiscoveryManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/DiscoveryManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/FileObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/FileObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/FileObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/IdentityObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/IdentityObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/IOConnection.cpp.o -c /workspaces/eipscanner/src/EIPScanner/IOConnection.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/IOConnection.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/MessageRouter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/ParameterObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/ParameterObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/SessionInfo.cpp.o -c /workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/SessionInfo.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/BaseSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/EndPoint.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/TCPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/UDPBoundSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/UDPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/sockets/Platform.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/utils/Logger.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/utils/Buffer.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultCode.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/ra/powerFlex525/DPIFaultParameter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/AttributeBaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorConfigObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorInputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/SDMotorOutputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/src/EIPScanner",
+    "command": "/usr/local/bin/c++  -DEIPScanner_EXPORTS -I/workspaces/eipscanner/src  -fPIC   -std=gnu++2a -o CMakeFiles/EIPScanner.dir/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestCipRevision.cpp.o -c /workspaces/eipscanner/test/cip/TestCipRevision.cpp",
+    "file": "/workspaces/eipscanner/test/cip/TestCipRevision.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestCipString.cpp.o -c /workspaces/eipscanner/test/cip/TestCipString.cpp",
+    "file": "/workspaces/eipscanner/test/cip/TestCipString.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestEPath.cpp.o -c /workspaces/eipscanner/test/cip/TestEPath.cpp",
+    "file": "/workspaces/eipscanner/test/cip/TestEPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/cip/TestMessageRouterResponse.cpp.o -c /workspaces/eipscanner/test/cip/TestMessageRouterResponse.cpp",
+    "file": "/workspaces/eipscanner/test/cip/TestMessageRouterResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacket.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacket.cpp",
+    "file": "/workspaces/eipscanner/test/eip/TestCommonPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacketItem.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacketItem.cpp",
+    "file": "/workspaces/eipscanner/test/eip/TestCommonPacketItem.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestCommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/test/eip/TestCommonPacketItemFactory.cpp",
+    "file": "/workspaces/eipscanner/test/eip/TestCommonPacketItemFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestEncapsPacket.cpp.o -c /workspaces/eipscanner/test/eip/TestEncapsPacket.cpp",
+    "file": "/workspaces/eipscanner/test/eip/TestEncapsPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/eip/TestEncapsPacketFactory.cpp.o -c /workspaces/eipscanner/test/eip/TestEncapsPacketFactory.cpp",
+    "file": "/workspaces/eipscanner/test/eip/TestEncapsPacketFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/fileObject/TestFileObjectLoadedState.cpp.o -c /workspaces/eipscanner/test/fileObject/TestFileObjectLoadedState.cpp",
+    "file": "/workspaces/eipscanner/test/fileObject/TestFileObjectLoadedState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/fileObject/TestFileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/test/fileObject/TestFileObjectUploadInProgressState.cpp",
+    "file": "/workspaces/eipscanner/test/fileObject/TestFileObjectUploadInProgressState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/sockets/TestEndPoint.cpp.o -c /workspaces/eipscanner/test/sockets/TestEndPoint.cpp",
+    "file": "/workspaces/eipscanner/test/sockets/TestEndPoint.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/utils/TestBuffer.cpp.o -c /workspaces/eipscanner/test/utils/TestBuffer.cpp",
+    "file": "/workspaces/eipscanner/test/utils/TestBuffer.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultManager.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultManager.cpp",
+    "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultObject.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultObject.cpp",
+    "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp.o -c /workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp",
+    "file": "/workspaces/eipscanner/test/vendor/ra/powerFlex525/TestDPIFaultParameter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/teknic/clearlink/TestIOInputData.cpp.o -c /workspaces/eipscanner/test/vendor/teknic/clearlink/TestIOInputData.cpp",
+    "file": "/workspaces/eipscanner/test/vendor/teknic/clearlink/TestIOInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/vendor/teknic/clearlink/TestEncoderInputData.cpp.o -c /workspaces/eipscanner/test/vendor/teknic/clearlink/TestEncoderInputData.cpp",
+    "file": "/workspaces/eipscanner/test/vendor/teknic/clearlink/TestEncoderInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestDiscoveryManager.cpp.o -c /workspaces/eipscanner/test/TestDiscoveryManager.cpp",
+    "file": "/workspaces/eipscanner/test/TestDiscoveryManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestIdentityObject.cpp.o -c /workspaces/eipscanner/test/TestIdentityObject.cpp",
+    "file": "/workspaces/eipscanner/test/TestIdentityObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestMessageRouter.cpp.o -c /workspaces/eipscanner/test/TestMessageRouter.cpp",
+    "file": "/workspaces/eipscanner/test/TestMessageRouter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/TestParameterObject.cpp.o -c /workspaces/eipscanner/test/TestParameterObject.cpp",
+    "file": "/workspaces/eipscanner/test/TestParameterObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/test.cpp.o -c /workspaces/eipscanner/test/test.cpp",
+    "file": "/workspaces/eipscanner/test/test.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/CipRevision.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipRevision.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/EPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/MessageRouterResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/MessageRouterResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/CipString.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/CipString.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardCloseRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/LargeForwardOpenRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/ForwardOpenResponse.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp.o -c /workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/cip/connectionManager/NetworkConnectionParametersBuilder.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacketItem.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItem.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/CommonPacketItemFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/CommonPacketItemFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/EncapsPacket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/eip/EncapsPacketFactory.cpp.o -c /workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/eip/EncapsPacketFactory.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectEmptyState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectEmptyState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectLoadedState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectLoadedState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectNonExistentState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp.o -c /workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/fileObject/FileObjectUploadInProgressState.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/BaseSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/BaseSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/EndPoint.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/EndPoint.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/TCPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/TCPSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/UDPBoundSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPBoundSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/UDPSocket.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/UDPSocket.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/sockets/Platform.cpp.o -c /workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/sockets/Platform.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/utils/Logger.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/utils/Logger.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/utils/Buffer.cpp.o -c /workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/utils/Buffer.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultManager.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultCode.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/ra/powerFlex525/DPIFaultParameter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_EPath.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouter.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/yaskawa/mp3300iec/Yaskawa_MessageRouterRequest.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/AttributeBaseObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorConfigObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorInputObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/SDMotorOutputObject.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.cpp"
+  },
+  {
+    "directory": "/workspaces/eipscanner/build/test",
+    "command": "/usr/local/bin/c++   -I/workspaces/eipscanner/src -I/workspaces/eipscanner/test -I/usr/local/include    -std=gnu++2a -o CMakeFiles/test_eipscanner.dir/__/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp.o -c /workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp",
+    "file": "/workspaces/eipscanner/src/EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.cpp"
+  }
 ]

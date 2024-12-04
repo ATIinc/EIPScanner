@@ -1,13 +1,15 @@
 //
 // Created by Jan Ritzenhoff on 8/28/2024
 //
-#include "EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.h"
 
 namespace eipScanner {
 namespace vendor {
 namespace teknic {
 namespace clearlink {
-namespace utils {
+namespace assembly {
+namespace input {
+
 EncoderInputData::EncoderInputData()
     : BaseAssemblyData(), _encoderPosition(), _encoderVelocity(),
       _encoderIndexPosition(), _encoderStatus(ENCODER_STATUS_SIZE),
@@ -21,7 +23,8 @@ EncoderInputData::_getDataFieldReferences() {
       std::ref(_encoderIndexPosition), std::ref(_encoderStatus),
       std::ref(_reservedPadding)};
 }
-} // namespace utils
+} // namespace input
+} // namespace assembly
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor

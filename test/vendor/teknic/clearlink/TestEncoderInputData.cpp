@@ -3,18 +3,13 @@
 //
 #include <gtest/gtest.h>
 
-#include "EIPScanner/cip/Types.h"
-#include "EIPScanner/vendor/teknic/clearlink/utils/EncoderInputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.h"
 
-namespace eipScanner {
-namespace vendor {
-namespace teknic {
-namespace clearlink {
-namespace utils {
+using namespace eipScanner::vendor::teknic::clearlink::assembly::input;
 
 class TestEncoderInputData : public ::testing::Test {
 public:
-  void SetUp() override { }
+  void SetUp() override {}
 };
 
 TEST_F(TestEncoderInputData, CreateEncoderInputDataBuffer) {
@@ -25,7 +20,6 @@ TEST_F(TestEncoderInputData, CreateEncoderInputDataBuffer) {
 
   // Bytes 26 through 51
   EXPECT_EQ(15, actualBuffer.size());
-
 }
 
 // TODO: Figure out what a good way to test the Reading functionality
@@ -45,9 +39,3 @@ TEST_F(TestEncoderInputData, CreateEncoderInputDataBuffer) {
 //   // EXPECT_EQ(10, encoderInputData._encoderPosition);
 
 // }
-
-} // namespace utils
-} // namespace clearlink
-} // namespace teknic
-} // namespace vendor
-} // namespace eipScanner
