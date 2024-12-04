@@ -17,7 +17,7 @@ namespace clearlink
 {
 namespace utils
 {
-    IOInputData::IOInputData() : BaseAssemblyData()
+    IOInputData::IOInputData() : BaseAssemblyData(), _dipValue(_dipValueSize)
     {
     }
 

@@ -16,6 +16,8 @@
 
 #include "EIPScanner/utils/Buffer.h"
 
+#include "EIPScanner/vendor/teknic/clearlink/utils/BaseAssemblyData.h"
+
 namespace eipScanner
 {
 namespace vendor
@@ -55,7 +57,8 @@ namespace clearlink
                                                      std::reference_wrapper<eipScanner::cip::CipLreal>,
                                                      std::reference_wrapper<eipScanner::cip::CipLword>,
                                                      std::reference_wrapper<eipScanner::cip::CipLint>,
-                                                     std::reference_wrapper<eipScanner::cip::CipUlint>>;
+                                                     std::reference_wrapper<eipScanner::cip::CipUlint>,
+                                                     std::reference_wrapper<eipScanner::vendor::teknic::clearlink::utils::BaseAssemblyData>>;
         // std::reference_wrapper<eipScanner::cip::CipUdint>, (this is typedeffed' to the same thing as the DWord. Including both in the variant confuses the compiler)
 
         virtual std::vector<ReflexiveFieldReference> _getAttributeReferences() = 0;

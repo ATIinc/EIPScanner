@@ -32,7 +32,6 @@ namespace utils
     class IOInputData : public BaseAssemblyData
     {
     public:
-
         /**
          * @brief Creates an instance that reads a buffer
          * @param data
@@ -51,14 +50,13 @@ namespace utils
         const eipScanner::cip::CipDint getDipStatus();
         const eipScanner::cip::CipDint getAipValue();
 
-    private:
+    private:        
         virtual std::vector<ReflexiveFieldReference> _getAttributeReferences();
 
         // CONSTANTS
-        size_t _dipValueSize = 13;
+        static const size_t _dipValueSize = 13;
 
-
-        std::vector<eipScanner::cip::CipBool> _dipValue; // needs to be of size 13
+        std::vector<eipScanner::cip::CipBool> _dipValue;
         eipScanner::cip::CipDint _dipStatus;
         eipScanner::cip::CipDint _aipValue;
     };
