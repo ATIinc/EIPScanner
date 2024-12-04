@@ -33,6 +33,8 @@ add_executable(test_eipscanner
 
         vendor/teknic/clearlink/TestIOInputData.cpp
         vendor/teknic/clearlink/TestEncoderInputData.cpp
+        vendor/teknic/clearlink/TestMotorInputData.cpp
+        vendor/teknic/clearlink/TestSerialAsciiInputData.cpp
 
         TestDiscoveryManager.cpp
         TestIdentityObject.cpp

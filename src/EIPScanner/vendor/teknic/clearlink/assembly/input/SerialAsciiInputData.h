@@ -38,11 +38,7 @@ private:
   virtual std::vector<DataFieldReference> _getDataFieldReferences();
 
   // CONSTANTS
-
-  // NOTE: The buffer can't handle uint32_t values (USINT) so this array is of
-  // (uint16_t) values and
-  //    has double the length to make up for it
-  static const size_t INPUT_DATA_SIZE = 128 * 2;
+  static const size_t INPUT_DATA_SIZE = 128;
 
   // Actual field members
   eipScanner::cip::CipDword _serialStatus;
@@ -51,7 +47,7 @@ private:
   eipScanner::cip::CipUdint _outputSequenceAck;
   eipScanner::cip::CipUdint _inputSize;
   eipScanner::cip::CipUdint _inputSequence;
-  std::vector<eipScanner::cip::CipUint> _inputData;
+  std::vector<eipScanner::cip::CipUsint> _inputData;
 };
 
 } // namespace input
