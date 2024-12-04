@@ -21,13 +21,22 @@ public:
 
 TEST_F(TestIOInputData, ShouldCreateBuffer) {
 
-    _ioInputData.dipValue = { 0x1, 0x2, 0x3, 0x4 };
+    _ioInputData.setDipValue({ 0x1, 0x2, 0x3, 0x4 });
+    _ioInputData.setDipStatus(0x2);
+    _ioInputData.setAipValue(0x9);
 
-    std::vector<uint8_t> buffer;
+    eipScanner::utils::Buffer buffer;
     buffer << _ioInputData;
 
     
-    std::vector<uint8_t> expectedBuffer = { 0x1, 0x2, 0x3, 0x4 };
+    eipScanner::utils::Buffer expectedBuffer;
 
-    EXPECT_EQ(expectedBuffer, buffer);
+    std::vector<eipScanner::cip::CipBool> dipValue = { 0x1, 0x2, 0x3, 0x4 };
+    eipScanner::cip::CipDint dipStatus = 0x2;
+    eipScanner::cip::CipDint aipValue = 0x9;
+
+    // dip value is size 13
+    expectedBuffer << dipValue << dipStatus << aipValue;
+
+    EXPECT_EQ(expectedBuffer.data(), buffer.data());
 }

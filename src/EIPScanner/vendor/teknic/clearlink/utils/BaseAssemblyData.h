@@ -58,10 +58,13 @@ namespace utils
                                                     std::reference_wrapper<eipScanner::cip::CipLreal>,
                                                     std::reference_wrapper<eipScanner::cip::CipLword>,
                                                     std::reference_wrapper<eipScanner::cip::CipLint>,
-                                                    std::reference_wrapper<eipScanner::cip::CipUlint>>;
+                                                    std::reference_wrapper<eipScanner::cip::CipUlint>,
+                                                    std::reference_wrapper<std::vector<eipScanner::cip::CipBool>>>;
         // std::reference_wrapper<eipScanner::cip::CipUdint>, (this is typedeffed' to the same thing as the DWord. Including both in the variant confuses the compiler)
 
-        friend eipScanner::utils::Buffer& operator<<(eipScanner::utils::Buffer& outStream, const BaseAssemblyData& assemblyData);
+        virtual std::vector<ReflexiveFieldReference> _getAttributeReferences() = 0;
+
+        friend eipScanner::utils::Buffer& operator<<(eipScanner::utils::Buffer& outStream, BaseAssemblyData& assemblyData);
 
         BaseAssemblyData& operator>>(eipScanner::utils::Buffer& inStream);
     };

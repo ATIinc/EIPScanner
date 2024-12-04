@@ -31,8 +31,8 @@ add_executable(test_eipscanner
         vendor/ra/powerFlex525/TestDPIFaultObject.cpp
         vendor/ra/powerFlex525/TestDPIFaultParameter.cpp
 
-        vendor/teknic/clearlink/TestBaseAssemblyData.cpp
-        # vendor/teknic/clearlink/TestIOInputData.cpp
+        # vendor/teknic/clearlink/TestBaseAssemblyData.cpp
+        vendor/teknic/clearlink/TestIOInputData.cpp
 
         TestDiscoveryManager.cpp
         TestIdentityObject.cpp

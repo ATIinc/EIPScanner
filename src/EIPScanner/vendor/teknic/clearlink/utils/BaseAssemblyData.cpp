@@ -14,9 +14,22 @@ namespace utils
     BaseAssemblyData::BaseAssemblyData() {}
 
     // NOT a part of the class
-    eipScanner::utils::Buffer& operator<<(eipScanner::utils::Buffer& outStream, const BaseAssemblyData& assemblyData)
+    eipScanner::utils::Buffer& operator<<(eipScanner::utils::Buffer& outStream, BaseAssemblyData& assemblyData)
     {
-        outStream << 0x1;
+        std::vector<BaseAssemblyData::ReflexiveFieldReference> classAttributes = assemblyData._getAttributeReferences();
+
+        for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size(); ++fieldIndex)
+        {
+
+            auto fieldReference = classAttributes[fieldIndex];
+
+            // pass a reference of the buffer to the lambda function
+            std::visit([&outStream](auto &fieldRef)
+                       { outStream << fieldRef; },
+                       fieldReference);
+
+        }
+
         return outStream;
     }
 
