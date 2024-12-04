@@ -1,0 +1,10 @@
+# Use LLVM style as the base and customize certain things
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+AllowAllArgumentsOnNextLine: true
+BreakBeforeBraces: Allman
+SpacesInParentheses: false
+SpaceBeforeParens: ControlStatements
