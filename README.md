@@ -60,6 +60,23 @@ option(ENABLE_VENDOR_SRC "Enable vendor source" OFF)
 ```
 3) manually comment needed files in src/vendor/CMakeLists.txt
 
+## Testing
+
+To build the tests:
+
+1) set this option in CmakeLists.txt
+```cmake
+option(TEST_ENABLED "Enable unit test" ON)
+```
+
+2) set the cmake build flag
+```shell
+# in EIPScanner root directory
+mkdir build && cd build
+cmake -DTEST_ENABLED=ON ..
+cmake --build .
+```
+
 ## Authors
 
 Aleksey Timin

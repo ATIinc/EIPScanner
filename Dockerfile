@@ -12,6 +12,8 @@ RUN git clone https://github.com/google/googletest.git \
     && cmake --build . --target install \
     && rm /git/googletest -rf
 
+RUN apt install -y libgmock-dev
+
 FROM prepare_testing AS build_devcontainer
 
 ARG USERNAME=vscode
