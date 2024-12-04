@@ -1,10 +1,60 @@
-# Use LLVM style as the base and customize certain things
 BasedOnStyle: LLVM
+ColumnLimit: 120
+Standard: Auto
+UseTab: AlignWithSpaces
+# These need to be in sync for tabs to be used
 IndentWidth: 4
 TabWidth: 4
-UseTab: Never
-ColumnLimit: 100
-AllowAllArgumentsOnNextLine: true
+ContinuationIndentWidth: 4
 BreakBeforeBraces: Allman
+SortIncludes: true
+SortUsingDeclarations: true
+BinPackArguments: false
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+# BreakAfterReturnType: Automatic # From a newer version of clang-format
+AlwaysBreakBeforeMultilineStrings: false
+AlignAfterOpenBracket: Align
+
+ReflowComments: false
+DerivePointerAlignment: false
+PointerAlignment: Left
+InsertTrailingCommas: Wrapped
+IndentCaseLabels: false
+FixNamespaceComments: true
+DeriveLineEnding: false
+
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeParens: ControlStatementsExceptForEachMacros
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeCaseColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
-SpaceBeforeParens: ControlStatements
+SpacesInSquareBrackets: false
+SpaceBeforeSquareBrackets: false
+
+BreakStringLiterals: true
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: Never
