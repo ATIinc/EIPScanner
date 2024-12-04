@@ -66,7 +66,7 @@ namespace utils
 
         friend eipScanner::utils::Buffer& operator<<(eipScanner::utils::Buffer& outStream, BaseAssemblyData& assemblyData);
 
-        BaseAssemblyData& operator>>(eipScanner::utils::Buffer& inStream);
+        friend eipScanner::utils::Buffer& operator>>(eipScanner::utils::Buffer& inStream, BaseAssemblyData& assemblyData);
     };
 }
 }

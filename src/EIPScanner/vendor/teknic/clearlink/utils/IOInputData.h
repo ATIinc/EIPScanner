@@ -41,11 +41,15 @@ namespace utils
 
         // -------------------------------------------------------------
 
-        void setDipValue(const std::vector<eipScanner::cip::CipBool>& dipValue);
-        void setDipStatus(const eipScanner::cip::CipDint& dipStatus);
-        void setAipValue(const eipScanner::cip::CipDint& aipValue);
+        void setDipValue(const std::vector<eipScanner::cip::CipBool> dipValue);
+        void setDipStatus(const eipScanner::cip::CipDint dipStatus);
+        void setAipValue(const eipScanner::cip::CipDint aipValue);
 
         // -------------------------------------------------------------
+
+        const std::vector<eipScanner::cip::CipBool>  getDipValue();
+        const eipScanner::cip::CipDint getDipStatus();
+        const eipScanner::cip::CipDint getAipValue();
 
     private:
         virtual std::vector<ReflexiveFieldReference> _getAttributeReferences();

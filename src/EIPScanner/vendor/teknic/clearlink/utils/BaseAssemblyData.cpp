@@ -33,9 +33,22 @@ namespace utils
         return outStream;
     }
 
-    BaseAssemblyData& BaseAssemblyData::operator>>(eipScanner::utils::Buffer& inStream)
+
+    eipScanner::utils::Buffer& operator>>(eipScanner::utils::Buffer& inStream, BaseAssemblyData& assemblyData)
     {
-        return *this;
+        std::vector<BaseAssemblyData::ReflexiveFieldReference> classAttributes = assemblyData._getAttributeReferences();
+
+        for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size(); ++fieldIndex)
+        {
+            auto fieldReference = classAttributes[fieldIndex];
+
+            // pass a reference of the getBuffer to the lambda function and the first argument of the lambda function is the actual field reference
+            std::visit([&inStream](auto &fieldRef)
+                       { inStream >> fieldRef; },
+                       fieldReference);
+        }
+
+        return inStream;
     }
 
 }
