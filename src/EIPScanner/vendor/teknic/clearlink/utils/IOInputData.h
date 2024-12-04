@@ -45,7 +45,7 @@ public:
   const std::vector<eipScanner::cip::CipUint> getAipValue();
 
 private:
-  virtual std::vector<ReflexiveFieldReference> _getAttributeReferences();
+  virtual std::vector<DataFieldReference> _getDataFieldReferences();
 
   // CONSTANTS
   static const size_t DIP_VALUE_SIZE = 2;  // 13 bits

@@ -11,8 +11,8 @@ BaseAssemblyData::BaseAssemblyData() {}
 // NOT a part of the class
 eipScanner::utils::Buffer &operator<<(eipScanner::utils::Buffer &outStream,
                                       BaseAssemblyData &assemblyData) {
-  std::vector<BaseAssemblyData::ReflexiveFieldReference> classAttributes =
-      assemblyData._getAttributeReferences();
+  std::vector<BaseAssemblyData::DataFieldReference> classAttributes =
+      assemblyData._getDataFieldReferences();
 
   for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size();
        ++fieldIndex) {
@@ -29,8 +29,8 @@ eipScanner::utils::Buffer &operator<<(eipScanner::utils::Buffer &outStream,
 
 eipScanner::utils::Buffer &operator>>(eipScanner::utils::Buffer &inStream,
                                       BaseAssemblyData &assemblyData) {
-  std::vector<BaseAssemblyData::ReflexiveFieldReference> classAttributes =
-      assemblyData._getAttributeReferences();
+  std::vector<BaseAssemblyData::DataFieldReference> classAttributes =
+      assemblyData._getDataFieldReferences();
 
   for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size();
        ++fieldIndex) {

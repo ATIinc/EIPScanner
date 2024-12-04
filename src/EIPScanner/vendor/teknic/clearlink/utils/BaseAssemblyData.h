@@ -39,7 +39,7 @@ public:
   BaseAssemblyData();
 
 protected:
-  using ReflexiveFieldReference = std::variant<
+  using DataFieldReference = std::variant<
       std::reference_wrapper<eipScanner::cip::CipOctet>,
       std::reference_wrapper<eipScanner::cip::CipBool>,
       std::reference_wrapper<eipScanner::cip::CipByte>,
@@ -61,7 +61,7 @@ protected:
   // the same thing as the DWord. Including both in the variant confuses the
   // compiler)
 
-  virtual std::vector<ReflexiveFieldReference> _getAttributeReferences() = 0;
+  virtual std::vector<DataFieldReference> _getDataFieldReferences() = 0;
 
   friend eipScanner::utils::Buffer &
   operator<<(eipScanner::utils::Buffer &outStream,

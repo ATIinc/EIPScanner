@@ -15,8 +15,8 @@ IOInputData::IOInputData()
       _ccioInputValue(), _ccioStatus(), _ccioBoardCount(),
       _reservedPadding(PADDING_BYTES_SIZE) {}
 
-std::vector<BaseAssemblyData::ReflexiveFieldReference>
-IOInputData::_getAttributeReferences() {
+std::vector<BaseAssemblyData::DataFieldReference>
+IOInputData::_getDataFieldReferences() {
   return {std::ref(_dipValue),       std::ref(_dipStatus),
           std::ref(_aipValue),       std::ref(_aiopStatus),
           std::ref(_dopStatus),      std::ref(_ccioInputValue),

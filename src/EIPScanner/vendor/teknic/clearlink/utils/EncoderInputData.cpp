@@ -13,8 +13,8 @@ EncoderInputData::EncoderInputData()
       _encoderIndexPosition(), _encoderStatus(ENCODER_STATUS_SIZE),
       _reservedPadding(PADDING_BYTES_SIZE) {}
 
-std::vector<BaseAssemblyData::ReflexiveFieldReference>
-EncoderInputData::_getAttributeReferences() {
+std::vector<BaseAssemblyData::DataFieldReference>
+EncoderInputData::_getDataFieldReferences() {
   return {
 
       std::ref(_encoderPosition), std::ref(_encoderVelocity),

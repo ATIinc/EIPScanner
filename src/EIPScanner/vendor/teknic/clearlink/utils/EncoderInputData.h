@@ -35,10 +35,10 @@ public:
   friend class TestEncoderInputData;
 
 private:
-  virtual std::vector<ReflexiveFieldReference> _getAttributeReferences();
+  virtual std::vector<DataFieldReference> _getDataFieldReferences();
 
   // CONSTANTS
-  static const size_t ENCODER_STATUS_SIZE = 1;  // 2 bits
+  static const size_t ENCODER_STATUS_SIZE = 1; // 2 bits
   static const size_t PADDING_BYTES_SIZE = 2;
 
   // Actual field members
