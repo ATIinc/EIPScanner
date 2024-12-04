@@ -1,7 +1,10 @@
 {
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     "editor.formatOnSave": false,
+    "editor.tabSize": 4
   },
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
