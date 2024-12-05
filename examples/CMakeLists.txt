@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
+set(CMAKE_CXX_STANDARD 20)
 
 # Remember to update the LIBRARY_PATH and LD_LIBRARY_PATH environment variables
 #   * export LIBRARY_PATH=/usr/local/include/

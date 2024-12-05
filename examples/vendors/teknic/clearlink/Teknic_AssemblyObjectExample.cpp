@@ -1,13 +1,14 @@
 #include <memory>
 
+#include "EIPScanner/vendor/teknic/clearlink/assembly/config/MotorConfigData.h"
 #include <EIPScanner/cip/Types.h>
-#include <EIPScanner/vendor/teknic/clearlink/MotorConfigAssemblyObject.h>
-#include <EIPScanner/vendor/teknic/clearlink/MotorInputAssemblyObject.h>
-#include <EIPScanner/vendor/teknic/clearlink/MotorOutputAssemblyObject.h>
+#include <EIPScanner/vendor/teknic/clearlink/ConfigAssemblyObject.h>
+#include <EIPScanner/vendor/teknic/clearlink/InputAssemblyObject.h>
+#include <EIPScanner/vendor/teknic/clearlink/OutputAssemblyObject.h>
+#include <stdexcept>
 
-using eipScanner::vendor::teknic::clearlink::MotorConfigAssemblyObject;
-using eipScanner::vendor::teknic::clearlink::MotorInputAssemblyObject;
-using eipScanner::vendor::teknic::clearlink::MotorOutputAssemblyObject;
+using namespace eipScanner::vendor::teknic;
+using eipScanner::vendor::teknic::clearlink::assembly::config::MotorConfigData;
 
 using eipScanner::cip::CipDint;
 using eipScanner::cip::CipUdint;
@@ -20,57 +21,114 @@ const eipScanner::cip::CipUdint MAX_ACCELERATION_STEPS_PER_SECOND_SQUARED =
 
 enum class MoveInstructionState { COMPLETED, IN_PROGRESS, FAULTED };
 
-struct MotorIO {
-  std::shared_ptr<MotorConfigAssemblyObject> configPtr;
-  std::shared_ptr<MotorInputAssemblyObject> inputPtr;
-  std::shared_ptr<MotorOutputAssemblyObject> outputPtr;
-
-  // TEMP: Until this is integrated into the SDMotor* objects
-  double stepsPerUnit;
-  double maxSetPositionVelocity;
-  double maxSetPositionAcceleration;
-  double maxSetVelocityAcceleration;
+struct ClearlinkIO {
+  std::shared_ptr<clearlink::ConfigAssemblyObject> configPtr;
+  std::shared_ptr<clearlink::InputAssemblyObject> inputPtr;
+  std::shared_ptr<clearlink::OutputAssemblyObject> outputPtr;
 };
 
-// TODO: Move InputShutdowns to the SDMotorInputObject class
-enum InputShutdowns {
-  MotionCanceled_CommandWhileShutdown = 0,
-  MotionCanceled_PosLimit = 1,
-  MotionCanceled_NegLimit = 2,
-  MotionCanceled_SensorEStop = 3,
-  MotionCanceled_SoftwareEStop = 4,
-  MotionCanceled_MotorDisabled = 5,
-  MotionCanceled_SoftLimitExceeded = 6,
-  MotionCanceled_FollowerAxisFault = 7,
-  MotionCanceled_CommandWhileFollowing = 8,
-  MotionCanceled_HomingNotReady = 9,
-  MotorFaulted = 10,
-  FollowingOverspeed = 11,
-  NUM_STATES = 12,
-  // 13 - 31 are reserved
-};
 
-void initializeMotorLimitSensors(
-    std::shared_ptr<MotorConfigAssemblyObject> motorConfigObjectPtr,
-    double brakeControlPinId, double positiveLimitPinId,
-    double negativeLimitPinId, double homingSensorPinId,
-    CipDint positiveSoftLimit, CipDint negativeSoftLimit)
+clearlink::assembly::config::MotorConfigData getMotorConfig(
+    std::shared_ptr<clearlink::ConfigAssemblyObject> clearlinkConfigPtr,
+    uint8_t motorConnectorId) {
+  switch (motorConnectorId) {
+  case 0:
+    return clearlinkConfigPtr->getMotor0ConfigData();
+  case 1:
+    return clearlinkConfigPtr->getMotor1ConfigData();
+  case 2:
+    return clearlinkConfigPtr->getMotor2ConfigData();
+  case 3:
+    return clearlinkConfigPtr->getMotor3ConfigData();
+  default:
+    throw std::runtime_error("Unknown motor connector ID " +
+                             std::to_string(motorConnectorId));
+  }
+}
 
-{
-  motorConfigObjectPtr->setBrakeOutputConnector(brakeControlPinId);
-  motorConfigObjectPtr->setPositiveLimitConnector(positiveLimitPinId);
-  motorConfigObjectPtr->setNegativeLimitConnector(negativeLimitPinId);
-  motorConfigObjectPtr->setHomeSensorConnector(homingSensorPinId);
+void setMotorConfig(
+    std::shared_ptr<clearlink::ConfigAssemblyObject> clearlinkConfigPtr,
+    uint8_t motorConnectorId,
+    clearlink::assembly::config::MotorConfigData motorConfigData) {
+  switch (motorConnectorId) {
+  case 0:
+    clearlinkConfigPtr->setMotor0ConfigData(motorConfigData);
+    break;
+  case 1:
+    clearlinkConfigPtr->setMotor1ConfigData(motorConfigData);
+    break;
+  case 2:
+    clearlinkConfigPtr->setMotor2ConfigData(motorConfigData);
+    break;
+  case 3:
+    clearlinkConfigPtr->setMotor3ConfigData(motorConfigData);
+    break;
+  default:
+    throw std::runtime_error("Unknown motor connector ID " +
+                             std::to_string(motorConnectorId));
+  }
+}
 
-  motorConfigObjectPtr->setSoftLimitPosition1(positiveSoftLimit);
-  motorConfigObjectPtr->setSoftLimitPosition2(negativeSoftLimit);
+// ------------------------------
+// initialize the object assembly wrappers
+// -------------
+ClearlinkIO createClearlinkIOObjects(std::string clearlinkIpAddress,
+                                     uint32_t clearlinkPort) {
+  // EthernetIP variables
+  // eipScanner::utils::Logger::setLogLevel(eipScanner::utils::LogLevel::INFO);
+  const auto sessionInfoPtr = std::make_shared<eipScanner::SessionInfo>(
+      clearlinkIpAddress, clearlinkPort);
 
-  motorConfigObjectPtr->setConfigFlag(
-      SDMotorConfigObject::ConfigFlag::HomingEnable, true);
-  motorConfigObjectPtr->setConfigFlag(
-      SDMotorConfigObject::ConfigFlag::HLFBInversion, true);
-  motorConfigObjectPtr->setConfigFlag(
-      SDMotorConfigObject::ConfigFlag::SoftwareLimitEnable, false);
+  // need to make sure that the EPath is padded in 8-bit segments or the
+  // SET_ATTRIBUTE_SINGLE request will fail
+  const auto messageRouterPtr =
+      std::make_shared<eipScanner::MessageRouter>(true);
+
+  auto clearlinkConfiguration =
+      clearlink::ConfigAssemblyObject(sessionInfoPtr, messageRouterPtr);
+  auto clearlinkInput =
+      clearlink::InputAssemblyObject(sessionInfoPtr, messageRouterPtr);
+  auto clearlinkOutput =
+      clearlink::OutputAssemblyObject(sessionInfoPtr, messageRouterPtr);
+
+  // read the current values on the Clearlink
+  clearlinkConfiguration.getAssembly();
+  clearlinkInput.getAssembly();
+  clearlinkOutput.getAssembly();
+
+  return {
+      std::make_shared<clearlink::ConfigAssemblyObject>(clearlinkConfiguration),
+      std::make_shared<clearlink::InputAssemblyObject>(clearlinkInput),
+      std::make_shared<clearlink::OutputAssemblyObject>(clearlinkOutput)};
+}
+
+void initializeMotorConfiguration(
+    std::shared_ptr<clearlink::ConfigAssemblyObject> clearlinkConfigPtr,
+    uint8_t motorConnectorId, double brakeControlPinId,
+    double positiveLimitPinId, double negativeLimitPinId,
+    double homingSensorPinId, CipDint positiveSoftLimit,
+    CipDint negativeSoftLimit) {
+
+  // read from the correct motor id
+  auto motorConfig = getMotorConfig(clearlinkConfigPtr, motorConnectorId);
+
+  motorConfig.setBrakeOutputConnector(brakeControlPinId);
+  motorConfig.setPositiveLimitConnector(positiveLimitPinId);
+  motorConfig.setNegativeLimitConnector(negativeLimitPinId);
+  motorConfig.setHomeSensorConnector(homingSensorPinId);
+
+  motorConfig.setSoftLimitPosition1(positiveSoftLimit);
+  motorConfig.setSoftLimitPosition2(negativeSoftLimit);
+
+  motorConfig.setConfigRegisterFlag(MotorConfigData::ConfigFlag::HomingEnable,
+                                    true);
+  motorConfig.setConfigRegisterFlag(MotorConfigData::ConfigFlag::HLFBInversion,
+                                    true);
+  motorConfig.setConfigRegisterFlag(
+      MotorConfigData::ConfigFlag::SoftwareLimitEnable, false);
+
+  // Write it back to the correct motor ID
+  setMotorConfig(clearlinkConfigPtr, motorConnectorId, motorConfig);
 }
 
 /*
@@ -123,3 +181,15 @@ bool homeMotor(std::shared_ptr<SDMotorInputObject> motorInputObjectPtr,
 } // namespace motorController
 
 */
+
+int main() {
+  // Get the clearlinkIO (given a variable IP address and the default
+  // Ethernet/IP port)
+  ClearlinkIO clearlinkRepresentation =
+      createClearlinkIOObjects("192.168.1.54", 0xAF12);
+
+  initializeMotorConfiguration(clearlinkRepresentation.configPtr, 0, -1, -1, -1,
+                               -1, 0, 0);
+
+  // write a positional move
+}
