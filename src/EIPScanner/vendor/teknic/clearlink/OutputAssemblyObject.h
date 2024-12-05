@@ -7,15 +7,16 @@
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKOUTPUTASSEMBLY_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKOUTPUTASSEMBLY_H
+
+#include <functional>
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/output/IOOutputData.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/output/MotorOutputData.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/output/SerialAsciiOutputData.h"
-#include <functional>
 
 namespace eipScanner {
 namespace vendor {
@@ -27,7 +28,7 @@ namespace clearlink {
  *
  * @brief Implements the Step & Direction Motor Output Data section
  */
-class MotorOutputAssemblyObject : public BaseAssemblyObject {
+class OutputAssemblyObject : public BaseAssemblyObject {
 public:
   static const eipScanner::cip::CipUint INSTANCE_ID = 0x70;
 
@@ -35,8 +36,8 @@ public:
    * @brief Creates an instance that reads a buffer
    * @param data
    */
-  MotorOutputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
-                           const eipScanner::MessageRouter::SPtr messageRouter);
+  OutputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
+                       const eipScanner::MessageRouter::SPtr messageRouter);
 
   assembly::output::MotorOutputData getMotor0OutputData();
   assembly::output::MotorOutputData getMotor1OutputData();
@@ -48,7 +49,7 @@ public:
   void setMotor0OutputData(assembly::output::MotorOutputData motor0OutputData);
   void setMotor1OutputData(assembly::output::MotorOutputData motor1OutputData);
   void setMotor2OutputData(assembly::output::MotorOutputData motor2OutputData);
-  void setMotor3OutputData(assembly::output::MotorOutputData motor3OutputData);                              
+  void setMotor3OutputData(assembly::output::MotorOutputData motor3OutputData);
 
 private:
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
@@ -68,4 +69,4 @@ private:
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKOUTPUTASSEMBLY_H

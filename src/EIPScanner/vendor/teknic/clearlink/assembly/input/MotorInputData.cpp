@@ -73,13 +73,12 @@ eipScanner::cip::CipDword MotorInputData::getMotorShutdowns() const {
 
 // --------------------------------------------
 
-bool MotorInputData::isInMotorState(InputState state) {
-  return _motorStatus & (1 << state);
+bool MotorInputData::hasMotorStatus(MotorStatus specificStatus) {
+  return _motorStatus & (0x1 << specificStatus);
 }
 
-std::string
-MotorInputData::motorStateToString(MotorInputData::InputState state) {
-  switch (state) {
+std::string MotorInputData::motorStatusToString(MotorStatus specificStatus) {
+  switch (specificStatus) {
   case AtTargetPosition:
     return "AtTargetPosition";
   case StepsActive:
@@ -124,10 +123,47 @@ MotorInputData::motorStateToString(MotorInputData::InputState state) {
     return "LoadVelocityMoveAck";
   case ClearMotorFaultAck:
     return "ClearMotorFaultAck";
-  case NUM_STATES:
-    return "NUM_STATES";
   default:
     return "Unknown State";
+  }
+}
+
+// --------------------------------------------
+
+bool MotorInputData::hasMotorShutdown(MotorShutdown specificShutdown) {
+  return _motorShutdowns & (0x1 << specificShutdown);
+}
+
+std::string
+MotorInputData::motorShutdownToString(MotorShutdown specificShutdown) {
+  switch (specificShutdown) {
+
+  case MotionCanceled_CommandWhileShutdown:
+    return "MotionCanceled_CommandWhileShutdown";
+  case MotionCanceled_PosLimit:
+    return "MotionCanceled_PosLimit";
+  case MotionCanceled_NegLimit:
+    return "MotionCanceled_NegLimit";
+  case MotionCanceled_SensorEStop:
+    return "MotionCanceled_SensorEStop";
+  case MotionCanceled_SoftwareEStop:
+    return "MotionCanceled_SoftwareEStop";
+  case MotionCanceled_MotorDisabled:
+    return "MotionCanceled_MotorDisabled";
+  case MotionCanceled_SoftLimitExceeded:
+    return "MotionCanceled_SoftLimitExceeded";
+  case MotionCanceled_FollowerAxisFault:
+    return "MotionCanceled_FollowerAxisFault";
+  case MotionCanceled_CommandWhileFollowing:
+    return "MotionCanceled_CommandWhileFollowing";
+  case MotionCanceled_HomingNotReady:
+    return "MotionCanceled_HomingNotReady";
+  case MotorFaulted:
+    return "MotorFaulted";
+  case FollowingOverspeed:
+    return "FollowingOverspeed";
+  default:
+    return "Unknown State"; // 13 - 31 are reserved;
   }
 }
 

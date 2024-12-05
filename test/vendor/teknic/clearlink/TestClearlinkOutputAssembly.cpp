@@ -2,12 +2,13 @@
 // Created by Jan Ritzenhoff on 12/5/24.
 //
 
-#include "EIPScanner/cip/MessageRouterResponse.h"
-#include "EIPScanner/vendor/teknic/clearlink/MotorOutputAssemblyObject.h"
-#include "Mocks.h"
 #include <gmock/gmock-more-actions.h>
 #include <gmock/gmock-spec-builders.h>
 #include <gtest/gtest.h>
+
+#include "EIPScanner/cip/MessageRouterResponse.h"
+#include "EIPScanner/vendor/teknic/clearlink/OutputAssemblyObject.h"
+#include "Mocks.h"
 
 using ::testing::_;
 using ::testing::Invoke;
@@ -34,14 +35,15 @@ TEST_F(TestMotorOutputAssembly, ShouldSendAllMessageBytes) {
       .WillOnce(Invoke([&calledDataSize](eipScanner::SessionInfoIf::SPtr si,
                                          eipScanner::cip::CipUsint service,
                                          const eipScanner::cip::EPath &path,
-                                         const std::vector<uint8_t> &data) -> eipScanner::cip::MessageRouterResponse {
+                                         const std::vector<uint8_t> &data)
+                           -> eipScanner::cip::MessageRouterResponse {
         calledDataSize = data.size();
 
         // just need to make the lambda happy
         return eipScanner::cip::MessageRouterResponse();
       }));
 
-  MotorOutputAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
+  OutputAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
   inputAssemblyObject.setAssembly();
 
   EXPECT_EQ(280, calledDataSize);

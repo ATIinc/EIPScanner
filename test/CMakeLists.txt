@@ -35,9 +35,9 @@ add_executable(test_eipscanner
         vendor/teknic/clearlink/TestEncoderInputData.cpp
         vendor/teknic/clearlink/TestMotorInputData.cpp
         vendor/teknic/clearlink/TestSerialAsciiInputData.cpp
-        vendor/teknic/clearlink/TestMotorInputAssembly.cpp
-        vendor/teknic/clearlink/TestMotorOutputAssembly.cpp
-        vendor/teknic/clearlink/TestMotorConfigAssembly.cpp
+        vendor/teknic/clearlink/TestClearlinkInputAssembly.cpp
+        vendor/teknic/clearlink/TestClearlinkOutputAssembly.cpp
+        vendor/teknic/clearlink/TestClearlinkConfigAssembly.cpp
 
         TestDiscoveryManager.cpp
         TestIdentityObject.cpp

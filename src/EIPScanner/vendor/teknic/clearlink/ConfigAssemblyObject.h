@@ -7,8 +7,10 @@
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=20
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORCONFIGASSEMBLY_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORCONFIGASSEMBLY_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKCONFIGASSEMBLY_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKCONFIGASSEMBLY_H
+
+#include <functional>
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
@@ -17,7 +19,6 @@
 #include "EIPScanner/vendor/teknic/clearlink/assembly/config/IOModeConfigData.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/config/MotorConfigData.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/config/SerialAsciiConfigData.h"
-#include <functional>
 
 namespace eipScanner {
 namespace vendor {
@@ -29,7 +30,7 @@ namespace clearlink {
  *
  * @brief Implements the Step & Direction Motor Config Data section
  */
-class MotorConfigAssemblyObject : public BaseAssemblyObject {
+class ConfigAssemblyObject : public BaseAssemblyObject {
 public:
   static const eipScanner::cip::CipUint INSTANCE_ID = 0x96;
 
@@ -37,9 +38,8 @@ public:
    * @brief Creates an instance that reads a buffer
    * @param data
    */
-  MotorConfigAssemblyObject(
-      const eipScanner::SessionInfoIf::SPtr sessionInfo,
-      const eipScanner::MessageRouter::SPtr messageRouter);
+  ConfigAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
+                       const eipScanner::MessageRouter::SPtr messageRouter);
 
   assembly::config::MotorConfigData getMotor0ConfigData();
   assembly::config::MotorConfigData getMotor1ConfigData();
@@ -73,4 +73,4 @@ private:
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORCONFIGASSEMBLY_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_CLEARLINKCONFIGASSEMBLY_H

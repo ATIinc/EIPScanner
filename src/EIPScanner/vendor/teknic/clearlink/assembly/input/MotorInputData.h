@@ -76,7 +76,7 @@ public:
    */
   eipScanner::cip::CipDword getMotorStatus() const;
 
-  enum InputState {
+  enum MotorStatus {
     AtTargetPosition = 0,
     StepsActive = 1,
     AtVelocity = 2,
@@ -104,15 +104,37 @@ public:
   };
 
   /**
-   * @brief Checks if the motor is in a specific state
+   * @brief Checks if the motor has a specific status
    */
-  bool isInMotorState(InputState state);
+  bool hasMotorStatus(MotorStatus specificStatus);
 
   /**
    * @brief Gets MotorShutdowns [AttrID=8]
    * @return
    */
   eipScanner::cip::CipDword getMotorShutdowns() const;
+
+  enum MotorShutdown {
+    MotionCanceled_CommandWhileShutdown = 0,
+    MotionCanceled_PosLimit = 1,
+    MotionCanceled_NegLimit = 2,
+    MotionCanceled_SensorEStop = 3,
+    MotionCanceled_SoftwareEStop = 4,
+    MotionCanceled_MotorDisabled = 5,
+    MotionCanceled_SoftLimitExceeded = 6,
+    MotionCanceled_FollowerAxisFault = 7,
+    MotionCanceled_CommandWhileFollowing = 8,
+    MotionCanceled_HomingNotReady = 9,
+    MotorFaulted = 10,
+    FollowingOverspeed = 11,
+    NUM_SHUTDOWNS = 12
+    // 13 - 31 are reserved
+  };
+
+  /**
+   * @brief Checks if the motor has a specific shutdown
+   */
+  bool hasMotorShutdown(MotorShutdown specificShutdown);
 
 private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
@@ -131,7 +153,8 @@ private:
   eipScanner::cip::CipDword _motorStatus;
   eipScanner::cip::CipDword _motorShutdowns;
 
-  std::string motorStateToString(InputState state);
+  std::string motorStatusToString(MotorStatus specificStatus);
+  std::string motorShutdownToString(MotorShutdown specificShutdown);
 };
 
 } // namespace input

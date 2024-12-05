@@ -2,12 +2,13 @@
 // Created by Jan Ritzenhoff on 12/5/24.
 //
 
-#include "EIPScanner/cip/MessageRouterResponse.h"
-#include "EIPScanner/vendor/teknic/clearlink/MotorConfigAssemblyObject.h"
-#include "Mocks.h"
 #include <gmock/gmock-more-actions.h>
 #include <gmock/gmock-spec-builders.h>
 #include <gtest/gtest.h>
+
+#include "EIPScanner/cip/MessageRouterResponse.h"
+#include "EIPScanner/vendor/teknic/clearlink/ConfigAssemblyObject.h"
+#include "Mocks.h"
 
 using ::testing::_;
 using ::testing::Invoke;
@@ -41,7 +42,7 @@ TEST_F(TestMotorConfigAssembly, ShouldSendAllMessageBytes) {
         return eipScanner::cip::MessageRouterResponse();
       }));
 
-  MotorConfigAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
+  ConfigAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
   inputAssemblyObject.setAssembly();
 
   EXPECT_EQ(232, calledDataSize);
