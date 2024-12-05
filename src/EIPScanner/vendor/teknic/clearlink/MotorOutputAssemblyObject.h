@@ -7,8 +7,8 @@
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORINPUTASSEMBLY_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORINPUTASSEMBLY_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
@@ -56,4 +56,4 @@ private:
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTORINPUTASSEMBLY_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_MOTOROUTPUTASSEMBLY_H
