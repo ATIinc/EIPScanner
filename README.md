@@ -77,6 +77,20 @@ cmake -DTEST_ENABLED=ON ..
 cmake --build .
 ```
 
+## IntelliSense
+
+In order to allow the `clangd` server to properly find all of the files being updated, the `compile_commands.json` file needs to be updated.
+
+* I the CMakeLists.txt files have all been updated correctly, the `compile_commands.json` file can be auto-generated
+
+1) generate the file in the `build` directory
+```shell
+cd build
+cmake -DTEST_ENABLED=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+```
+
+2) replace the `compile_commands.json` file with the `build/compile_commands.json` file
+
 ## Authors
 
 Aleksey Timin

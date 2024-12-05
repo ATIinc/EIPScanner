@@ -3,7 +3,7 @@
 //
 
 #include "EIPScanner/cip/MessageRouterResponse.h"
-#include "EIPScanner/vendor/teknic/clearlink/MotorInputAssemblyObject.h"
+#include "EIPScanner/vendor/teknic/clearlink/MotorOutputAssemblyObject.h"
 #include "Mocks.h"
 #include <gmock/gmock-more-actions.h>
 #include <gmock/gmock-spec-builders.h>
@@ -15,7 +15,7 @@ using ::testing::Invoke;
 using namespace eipScanner;
 using namespace eipScanner::vendor::teknic::clearlink;
 
-class TestMotorInputAssembly : public ::testing::Test {
+class TestMotorOutputAssembly : public ::testing::Test {
 public:
   void SetUp() override {
     _messageRouter = std::make_shared<TMockMessageRouter>();
@@ -26,7 +26,7 @@ public:
   SessionInfoIf::SPtr _nullSession;
 };
 
-TEST_F(TestMotorInputAssembly, ShouldSendAllMessageBytes) {
+TEST_F(TestMotorOutputAssembly, ShouldSendAllMessageBytes) {
 
   size_t calledDataSize = 0;
 
@@ -41,8 +41,8 @@ TEST_F(TestMotorInputAssembly, ShouldSendAllMessageBytes) {
         return eipScanner::cip::MessageRouterResponse();
       }));
 
-  MotorInputAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
+  MotorOutputAssemblyObject inputAssemblyObject(_nullSession, _messageRouter);
   inputAssemblyObject.setAssembly();
 
-  EXPECT_EQ(332, calledDataSize);
+  EXPECT_EQ(280, calledDataSize);
 }

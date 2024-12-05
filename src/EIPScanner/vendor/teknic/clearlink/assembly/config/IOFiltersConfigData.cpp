@@ -11,7 +11,7 @@ namespace assembly {
 namespace config {
 
 IOFiltersConfigData::IOFiltersConfigData()
-    : BaseAssemblyData(), _aipFilters(), _dipFilters(DIP_FILTERS_SIZE),
+    : BaseAssemblyData(), _aipFilters(AIP_FILTERS_SIZE), _dipFilters(DIP_FILTERS_SIZE),
       _ccioFilters(CCIO_FILTERS_SIZE) {}
 
 std::vector<BaseAssemblyData::DataFieldReference>

@@ -37,11 +37,12 @@ private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
+  static const size_t AIP_FILTERS_SIZE = 4;
   static const size_t DIP_FILTERS_SIZE = 26;
   static const size_t CCIO_FILTERS_SIZE = 8;
 
   // Actual field members
-  eipScanner::cip::CipUsint _aipFilters;
+  std::vector<eipScanner::cip::CipUsint> _aipFilters;
   std::vector<eipScanner::cip::CipUint> _dipFilters;
   std::vector<eipScanner::cip::CipUsint> _ccioFilters;
 };
