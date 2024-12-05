@@ -1,5 +1,5 @@
 //
-// Created by Aleksey Timin on 12/11/19.
+// Created by Jan Ritzenhoff on 12/5/24.
 //
 
 #include "EIPScanner/cip/MessageRouterResponse.h"

@@ -46,20 +46,19 @@ protected:
       // Following commented out types are typedef to the same as CipUint
       // std::reference_wrapper<eipScanner::cip::CipWord>,
       std::reference_wrapper<eipScanner::cip::CipDword>,
+      // Following commented out types are typedef to the same as CipUlint
+      // std::reference_wrapper<eipScanner::cip::CipUdint>,
       std::reference_wrapper<eipScanner::cip::CipUlint>,
+      // Following commented out types are typedef to the same as CipUlint
+      // std::reference_wrapper<eipScanner::cip::CipLword>,
       std::reference_wrapper<eipScanner::cip::CipSint>,
       std::reference_wrapper<eipScanner::cip::CipInt>,
       std::reference_wrapper<eipScanner::cip::CipDint>,
       std::reference_wrapper<eipScanner::cip::CipLint>,
       std::reference_wrapper<eipScanner::cip::CipReal>,
       std::reference_wrapper<eipScanner::cip::CipLreal>,
-      // Following commented out types are typedef to the same as CipUlint
-      // std::reference_wrapper<eipScanner::cip::CipLword>,
       std::reference_wrapper<std::vector<eipScanner::cip::CipBool>>,
       std::reference_wrapper<std::vector<eipScanner::cip::CipUint>>>;
-  // std::reference_wrapper<eipScanner::cip::CipUdint>, (this is typedeffed' to
-  // the same thing as the DWord. Including both in the variant confuses the
-  // compiler)
 
   virtual std::vector<DataFieldReference> _getDataFieldReferences() = 0;
 

@@ -1,18 +1,19 @@
 //
-// Created by Jan Ritzenhoff on 8/29/2024.
+// Created by Jan Ritzenhoff on 12/4/2024.
 //
 
 /* Based on:
  * https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=17
- * GET  : Instance 0x64 - Attribute 3 - Target 2 Originator (Step & Direction
- * Input Assembly) SET  : Instance 0x70 - Attribute 3 - Originator 2 Target
- * (Step & Direction Output Assembly) BOTH : Instance 0x96 - Attribute 3 -
- * Configuration Object (Step & Direction Config Assembly)
  *
+ * GET  : Instance 0x64 - Attribute 3 - Target 2 Originator (Step & Direction Input Assembly)
+ *
+ * SET  : Instance 0x70 - Attribute 3 - Originator 2 Target (Step & Direction Output Assembly) 
+ * 
+ * BOTH : Instance 0x96 - Attribute 3 - Configuration Object (Step & Direction Config Assembly)
  */
 
-#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLYBASEOBJECT_H
-#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLYBASEOBJECT_H
+#ifndef EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_BASEASSEMBLYOBJECT_H
+#define EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_BASEASSEMBLYOBJECT_H
 
 #include <functional>
 #include <vector>
@@ -71,4 +72,4 @@ private:
 } // namespace vendor
 } // namespace eipScanner
 
-#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_ASSEMBLYBASEOBJECT_H
+#endif // EIPSCANNER_VENDOR_TEKNIC_CLEARLINK_BASEASSEMBLYOBJECT_H
