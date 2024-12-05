@@ -25,6 +25,9 @@ target_link_libraries(discovery_example PUBLIC EIPScanner)
 add_executable(yaskawa_assembly_object_example vendors/yaskawa/mp3300iec/Yaskawa_AssemblyObjectExample.cpp)
 target_link_libraries(yaskawa_assembly_object_example PUBLIC EIPScanner)
 
+add_executable(teknic_assembly_object_example vendors/teknic/clearlink/Teknic_AssemblyObjectExample.cpp)
+target_link_libraries(teknic_assembly_object_example PUBLIC EIPScanner)
+
 if(WIN32)
   target_link_libraries(explicit_messaging ws2_32)
   target_link_libraries(file_object_example ws2_32)
