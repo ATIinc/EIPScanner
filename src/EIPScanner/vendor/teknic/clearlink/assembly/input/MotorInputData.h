@@ -34,6 +34,86 @@ public:
    */
   MotorInputData();
 
+  /**
+   * @brief Gets CommandedPosition [AttrID=1]
+   * @return
+   */
+  eipScanner::cip::CipDint getCommandedPosition() const;
+
+  /**
+   * @brief Gets CommandedVelocity [AttrID=2]
+   * @return
+   */
+  eipScanner::cip::CipDint getCommandedVelocity() const;
+
+  /**
+   * @brief Gets TargetPosition [AttrID=3]
+   * @return
+   */
+  eipScanner::cip::CipDint getTargetPosition() const;
+
+  /**
+   * @brief Gets TargetVelocity [AttrID=4]
+   * @return
+   */
+  eipScanner::cip::CipDint getTargetVelocity() const;
+
+  /**
+   * @brief Gets CapturedPosition [AttrID=5]
+   * @return
+   */
+  eipScanner::cip::CipDint getCapturedPosition() const;
+
+  /**
+   * @brief Gets MeasuredTorque [AttrID=6]
+   * @return
+   */
+  eipScanner::cip::CipReal getMeasuredTorque() const;
+
+  /**
+   * @brief Gets MotorStatus [AttrID=7]
+   * @return
+   */
+  eipScanner::cip::CipDword getMotorStatus() const;
+
+  enum InputState {
+    AtTargetPosition = 0,
+    StepsActive = 1,
+    AtVelocity = 2,
+    MoveDirection = 3,
+    InPositiveLimit = 4,
+    InNegativeLimit = 5,
+    InEStopSensor = 6,
+    InHomeSensor = 7,
+    Homing = 8,
+    MotorInFault = 9,
+    Enabled = 10,
+    OutsideSoftLimits = 11,
+    PositionalMove = 12,
+    HasHomed = 13,
+    HLFB_On = 14,
+    HasTorqueMeasurement = 15,
+    ReadyToHome = 16,
+    ShutdownsPresent = 17,
+    AddToPositionAck = 18,
+    LoadPositionMoveAck = 19,
+    LoadVelocityMoveAck = 20,
+    ClearMotorFaultAck = 21,
+    NUM_STATES = 22
+    // 22 - 31 are reserved
+  };
+
+  /**
+   * @brief Checks if the motor is in a specific state
+   */
+  bool isInMotorState(InputState state);
+
+  /**
+   * @brief Gets MotorShutdowns [AttrID=8]
+   * @return
+   */
+  eipScanner::cip::CipDword getMotorShutdowns() const;
+
 private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
 
@@ -50,6 +130,8 @@ private:
   eipScanner::cip::CipReal _measuredTorque;
   eipScanner::cip::CipDword _motorStatus;
   eipScanner::cip::CipDword _motorShutdowns;
+
+  std::string motorStateToString(InputState state);
 };
 
 } // namespace input
