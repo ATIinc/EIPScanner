@@ -28,7 +28,7 @@ namespace clearlink {
  *
  * @brief Implements the Step & Direction Motor Input Data section
  */
-class MotorInputAssembly : public BaseAssemblyObject {
+class MotorInputAssemblyObject : public BaseAssemblyObject {
 public:
   static const eipScanner::cip::CipUint INSTANCE_ID = 0x64;
 
@@ -36,12 +36,12 @@ public:
    * @brief Creates an instance that reads a buffer
    * @param data
    */
-  MotorInputAssembly(const eipScanner::SessionInfoIf::SPtr sessionInfo,
-                     const eipScanner::MessageRouter::SPtr messageRouter);
+  MotorInputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
+                           const eipScanner::MessageRouter::SPtr messageRouter);
 
 private:
-  virtual std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
-  _getAssemblyDataFieldReferences() = 0;
+  std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
+  _getAssemblyDataFieldReferences() override;
 
   // Actual field members
   assembly::input::IOInputData _ioInputData;

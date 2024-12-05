@@ -1,5 +1,7 @@
 set(SOURCE_FILES 
-        # ${CMAKE_CURRENT_LIST_DIR}/AssemblyObject.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/BaseAssemblyObject.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/MotorInputAssemblyObject.cpp
+
         ${CMAKE_CURRENT_LIST_DIR}/AttributeBaseObject.cpp
         ${CMAKE_CURRENT_LIST_DIR}/SDMotorConfigObject.cpp
         ${CMAKE_CURRENT_LIST_DIR}/SDMotorInputObject.cpp

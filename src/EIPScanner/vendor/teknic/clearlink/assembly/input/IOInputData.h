@@ -46,7 +46,7 @@ public:
   const std::vector<eipScanner::cip::CipUint> getAipValue();
 
 private:
-  virtual std::vector<DataFieldReference> _getDataFieldReferences();
+  std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
   static const size_t DIP_VALUE_SIZE = 2;  // 13 bits
@@ -54,7 +54,7 @@ private:
   static const size_t AIP_VALUE_SIZE = 4;
   static const size_t AIOP_STATUS_SIZE = 2; // 5 bits
   static const size_t DOP_STATUS_SIZE = 2;  // 6 bits
-  static const size_t PADDING_BYTES_SIZE = 2;
+  static const size_t PADDING_BYTES_SIZE = 3;
 
   // Actual field members
   std::vector<eipScanner::cip::CipBool> _dipValue;

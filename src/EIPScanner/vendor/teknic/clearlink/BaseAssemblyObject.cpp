@@ -1,6 +1,8 @@
 //
 // Created by Jan Ritzenhoff on 8/29/2024.
 //
+#include <functional>
+#include <iostream>
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
@@ -17,7 +19,7 @@ BaseAssemblyObject::BaseAssemblyObject(
     : BaseObject(CLASS_ID, instanceId), _sessionInfo(sessionInfo),
       _messageRouter(messageRouter) {}
 
-void BaseAssemblyObject::_getAttribute() {
+void BaseAssemblyObject::getAssembly() {
   // actually send the explicit message
   auto getAssemblyResponse = _messageRouter->sendRequest(
       _sessionInfo, eipScanner::cip::ServiceCodes::GET_ATTRIBUTE_SINGLE,
@@ -36,19 +38,26 @@ void BaseAssemblyObject::_getAttribute() {
 
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
       subAssemblyReferences = _getAssemblyDataFieldReferences();
-  for (auto fieldReference : subAssemblyReferences) {
-    getBuffer >> fieldReference;
+
+  for (uint fieldIndex = 0; fieldIndex < subAssemblyReferences.size();
+       ++fieldIndex) {
+    getBuffer >> subAssemblyReferences[fieldIndex];
   }
 }
 
-void BaseAssemblyObject::_setAttribute() {
+void BaseAssemblyObject::setAssembly() {
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
       subAssemblyReferences = _getAssemblyDataFieldReferences();
 
   eipScanner::utils::Buffer fullAssemblyBuffer;
 
-  for (auto fieldReference : subAssemblyReferences) {
-    fullAssemblyBuffer << fieldReference;
+  for (uint fieldIndex = 0; fieldIndex < subAssemblyReferences.size();
+       ++fieldIndex) {
+    fullAssemblyBuffer << subAssemblyReferences[fieldIndex];
+
+    // TODO: Delete comments from unit testing
+    // std::cout << "Full buffer size: " << fullAssemblyBuffer.size()
+    //           << " from field count " << fieldIndex << std::endl;
   }
 
   // actually send the explicit message

@@ -35,7 +35,7 @@ public:
   SerialAsciiInputData();
 
 private:
-  virtual std::vector<DataFieldReference> _getDataFieldReferences();
+  std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
   static const size_t INPUT_DATA_SIZE = 128;

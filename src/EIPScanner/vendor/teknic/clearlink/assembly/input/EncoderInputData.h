@@ -34,11 +34,11 @@ public:
   EncoderInputData();
 
 private:
-  virtual std::vector<DataFieldReference> _getDataFieldReferences();
+  std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
   static const size_t ENCODER_STATUS_SIZE = 1; // 2 bits
-  static const size_t PADDING_BYTES_SIZE = 2;
+  static const size_t PADDING_BYTES_SIZE = 3;
 
   // Actual field members
   eipScanner::cip::CipDint _encoderPosition;

@@ -48,19 +48,19 @@ public:
                      const eipScanner::SessionInfoIf::SPtr sessionInfo,
                      const eipScanner::MessageRouter::SPtr messageRouter);
 
-protected:
-  virtual std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
-  _getAssemblyDataFieldReferences() = 0;
-
   /**
    * @brief Gets the whole assembly
    */
-  void _getAttribute();
+  void getAssembly();
 
   /**
    * @brief Sets the whole assembly
    */
-  void _setAttribute();
+  void setAssembly();
+
+protected:
+  virtual std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
+  _getAssemblyDataFieldReferences() = 0;
 
 private:
   const eipScanner::SessionInfoIf::SPtr _sessionInfo;

@@ -35,7 +35,7 @@ public:
   MotorInputData();
 
 private:
-  virtual std::vector<DataFieldReference> _getDataFieldReferences();
+  std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
   static const size_t ENCODER_STATUS_SIZE = 1; // 2 bits
