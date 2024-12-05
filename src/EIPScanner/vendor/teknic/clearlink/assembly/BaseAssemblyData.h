@@ -37,21 +37,24 @@ public:
 
 protected:
   using DataFieldReference = std::variant<
-      std::reference_wrapper<eipScanner::cip::CipOctet>,
-      std::reference_wrapper<eipScanner::cip::CipBool>,
-      std::reference_wrapper<eipScanner::cip::CipByte>,
-      std::reference_wrapper<eipScanner::cip::CipWord>,
-      std::reference_wrapper<eipScanner::cip::CipDword>,
       std::reference_wrapper<eipScanner::cip::CipUsint>,
+      // Following commented out types are typedef to the same as CipUsint
+      // std::reference_wrapper<eipScanner::cip::CipOctet>,
+      // std::reference_wrapper<eipScanner::cip::CipBool>,
+      // std::reference_wrapper<eipScanner::cip::CipByte>,
       std::reference_wrapper<eipScanner::cip::CipUint>,
+      // Following commented out types are typedef to the same as CipUint
+      // std::reference_wrapper<eipScanner::cip::CipWord>,
+      std::reference_wrapper<eipScanner::cip::CipDword>,
+      std::reference_wrapper<eipScanner::cip::CipUlint>,
       std::reference_wrapper<eipScanner::cip::CipSint>,
       std::reference_wrapper<eipScanner::cip::CipInt>,
       std::reference_wrapper<eipScanner::cip::CipDint>,
+      std::reference_wrapper<eipScanner::cip::CipLint>,
       std::reference_wrapper<eipScanner::cip::CipReal>,
       std::reference_wrapper<eipScanner::cip::CipLreal>,
+      // Following commented out types are typedef to the same as CipUlint
       // std::reference_wrapper<eipScanner::cip::CipLword>,
-      std::reference_wrapper<eipScanner::cip::CipLint>,
-      std::reference_wrapper<eipScanner::cip::CipUlint>,
       std::reference_wrapper<std::vector<eipScanner::cip::CipBool>>,
       std::reference_wrapper<std::vector<eipScanner::cip::CipUint>>>;
   // std::reference_wrapper<eipScanner::cip::CipUdint>, (this is typedeffed' to

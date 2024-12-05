@@ -29,7 +29,7 @@ namespace clearlink {
  */
 class MotorOutputAssemblyObject : public BaseAssemblyObject {
 public:
-  static const eipScanner::cip::CipUint INSTANCE_ID = 0x64;
+  static const eipScanner::cip::CipUint INSTANCE_ID = 0x70;
 
   /**
    * @brief Creates an instance that reads a buffer

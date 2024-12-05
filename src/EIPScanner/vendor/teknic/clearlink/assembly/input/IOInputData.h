@@ -65,7 +65,7 @@ private:
   std::vector<eipScanner::cip::CipBool> _dopStatus;
   eipScanner::cip::CipUlint _ccioInputValue;
   eipScanner::cip::CipUlint _ccioStatus;
-  eipScanner::cip::CipSint _ccioBoardCount;
+  eipScanner::cip::CipUsint _ccioBoardCount;
   std::vector<eipScanner::cip::CipByte> _reservedPadding;
 };
 
