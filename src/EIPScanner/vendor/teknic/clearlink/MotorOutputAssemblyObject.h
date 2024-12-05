@@ -3,7 +3,7 @@
 //
 
 // Based on:
-//	Assembly Object - Motor Input Data (04hex - 1 instance)
+//	Assembly Object - Motor Output Data (04hex - 1 instance)
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
@@ -12,10 +12,9 @@
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/input/SerialAsciiInputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/output/IOOutputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/output/MotorOutputData.h"
+#include "EIPScanner/vendor/teknic/clearlink/assembly/output/SerialAsciiOutputData.h"
 #include <functional>
 
 namespace eipScanner {
@@ -24,11 +23,11 @@ namespace teknic {
 namespace clearlink {
 
 /**
- * @class MotorInputAssembly
+ * @class MotorOutputAssembly
  *
- * @brief Implements the Step & Direction Motor Input Data section
+ * @brief Implements the Step & Direction Motor Output Data section
  */
-class MotorInputAssemblyObject : public BaseAssemblyObject {
+class MotorOutputAssemblyObject : public BaseAssemblyObject {
 public:
   static const eipScanner::cip::CipUint INSTANCE_ID = 0x64;
 
@@ -36,7 +35,7 @@ public:
    * @brief Creates an instance that reads a buffer
    * @param data
    */
-  MotorInputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
+  MotorOutputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
                            const eipScanner::MessageRouter::SPtr messageRouter);
 
 private:
@@ -44,13 +43,12 @@ private:
   _getAssemblyDataFieldReferences() override;
 
   // Actual field members
-  assembly::input::IOInputData _ioInputData;
-  assembly::input::EncoderInputData _encoderInputData;
-  assembly::input::MotorInputData _motor0InputData;
-  assembly::input::MotorInputData _motor1InputData;
-  assembly::input::MotorInputData _motor2InputData;
-  assembly::input::MotorInputData _motor3InputData;
-  assembly::input::SerialAsciiInputData _serialAsciiInputData;
+  assembly::output::IOOutputData _ioOutputData;
+  assembly::output::MotorOutputData _motor0OutputData;
+  assembly::output::MotorOutputData _motor1OutputData;
+  assembly::output::MotorOutputData _motor2OutputData;
+  assembly::output::MotorOutputData _motor3OutputData;
+  assembly::output::SerialAsciiOutputData _serialAsciiOutputData;
 };
 
 } // namespace clearlink

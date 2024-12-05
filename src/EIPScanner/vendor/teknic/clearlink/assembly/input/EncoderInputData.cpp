@@ -1,5 +1,5 @@
 //
-// Created by Jan Ritzenhoff on 8/28/2024
+// Created by Jan Ritzenhoff on 12/4/2024
 //
 #include "EIPScanner/vendor/teknic/clearlink/assembly/input/EncoderInputData.h"
 

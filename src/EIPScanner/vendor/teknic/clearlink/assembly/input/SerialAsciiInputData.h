@@ -3,7 +3,7 @@
 //
 
 // Based on:
-//	Assembly Object - Motor Input Data (04hex - 1 instance)
+//	Assembly Object - Serial Ascii Input Data (04hex - 1 instance)
 //		*
 // https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18
 
@@ -24,7 +24,7 @@ namespace input {
 /**
  * @class SerialAsciiInputData
  *
- * @brief Implements the Step & Direction Motor Input Data section
+ * @brief Implements the Step & Direction Serial Ascii Input Data section
  */
 class SerialAsciiInputData : public BaseAssemblyData {
 public:
