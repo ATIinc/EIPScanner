@@ -33,16 +33,126 @@ public:
    */
   MotorOutputData();
 
+  /**
+   * @brief Gets MoveDistance [AttrID=1]
+   * @return
+   */
+  eipScanner::cip::CipDint getMoveDistance() const;
+
+  /**
+   * @brief Gets JogVelocity [AttrID=2]
+   * @return
+   */
+  eipScanner::cip::CipDint getJogVelocity() const;
+
+  /**
+   * @brief Gets VelocityLimitForPositionalMove [AttrID=3]
+   * @return
+   */
+  eipScanner::cip::CipUdint getVelocityLimit() const;
+
+  /**
+   * @brief Gets AccelerationLimitForPositionalMove [AttrID=4]
+   * @return
+   */
+  eipScanner::cip::CipUdint getAccelerationLimit() const;
+
+  /**
+   * @brief Gets DecelerationLimit [AttrID=5]
+   * @return
+   */
+  eipScanner::cip::CipUdint getDecelerationLimit() const;
+
+  /**
+   * @brief Gets OutputRegister [AttrID=6]
+   * @return
+   */
+  eipScanner::cip::CipDword getOutputRegister() const;
+
+  /**
+   * @brief Gets AddToPosition [AttrID=7]
+   * @return
+   */
+  eipScanner::cip::CipDint getAddToPosition() const;
+
+  // -------------------------------------------------------------
+
+  /**
+   * @brief Sets MoveDistance [AttrID=1]
+   * @return
+   */
+  void setMoveDistance(eipScanner::cip::CipDint moveDistance);
+
+  /**
+   * @brief Sets JogVelocity [AttrID=2]
+   * @return
+   */
+  void setJogVelocity(eipScanner::cip::CipDint jogVelocity);
+
+  /**
+   * @brief Sets VelocityLimitForPositionalMove [AttrID=3]
+   * @return
+   */
+  void setVelocityLimit(
+      eipScanner::cip::CipUdint velocityLimitForPositionalMove);
+
+  /**
+   * @brief Sets AccelerationLimitForPositionalMove [AttrID=4]
+   * @return
+   */
+  void setAccelerationLimit(
+      eipScanner::cip::CipUdint accelerationLimitForPositionalMove);
+
+  /**
+   * @brief Sets DecelerationLimit [AttrID=5]
+   * @return
+   */
+  void setDecelerationLimit(eipScanner::cip::CipUdint decelerationLimit);
+
+  /**
+   * @brief Sets OutputRegister [AttrID=6]
+   * @return
+   */
+  void setOutputRegister(eipScanner::cip::CipDword outputRegister);
+
+  /**
+   * @brief Sets AddToPosition [AttrID=7]
+   * @return
+   */
+  void setAddToPosition(eipScanner::cip::CipDint addToPosition);
+
+  enum OutputFlag {
+    Enable = 0,
+    AbsoluteMove = 1,
+    HomingMove = 2,
+    LoadPositionMove = 3,
+    LoadVelocityMove = 4,
+    SoftwareEStop = 5,
+    ClearAlerts = 6,
+    ClearMotorFault = 7,
+    // 8-31 are reserved
+  };
+
+  /**
+   * @brief Sets a motor flag
+   */
+  void setOutputRegisterFlag(OutputFlag flag, bool value);
+
+  /**
+   * @brief Checks if the motor is controlled to have a specific state
+   */
+  bool hasFlagSet(OutputFlag flag);
+
 private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // Actual field members
-  eipScanner::cip::CipDint  _moveDistance;
+  eipScanner::cip::CipDint _moveDistance;
   eipScanner::cip::CipUdint _velocityLimit;
   eipScanner::cip::CipUdint _accelerationLimit;
   eipScanner::cip::CipUdint _decelerationLimit;
-  eipScanner::cip::CipDint  _jogVelocity;
-  eipScanner::cip::CipDint  _addToPosition;
+  eipScanner::cip::CipDint _jogVelocity;
+  eipScanner::cip::CipDint _addToPosition;
   eipScanner::cip::CipDword _outputRegister;
 };
 
