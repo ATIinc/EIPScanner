@@ -38,6 +38,18 @@ public:
   MotorOutputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
                            const eipScanner::MessageRouter::SPtr messageRouter);
 
+  assembly::output::MotorOutputData getMotor0OutputData();
+  assembly::output::MotorOutputData getMotor1OutputData();
+  assembly::output::MotorOutputData getMotor2OutputData();
+  assembly::output::MotorOutputData getMotor3OutputData();
+
+  // -------------------------------------------------------------
+
+  void setMotor0OutputData(assembly::output::MotorOutputData motor0OutputData);
+  void setMotor1OutputData(assembly::output::MotorOutputData motor1OutputData);
+  void setMotor2OutputData(assembly::output::MotorOutputData motor2OutputData);
+  void setMotor3OutputData(assembly::output::MotorOutputData motor3OutputData);                              
+
 private:
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
   _getAssemblyDataFieldReferences() override;

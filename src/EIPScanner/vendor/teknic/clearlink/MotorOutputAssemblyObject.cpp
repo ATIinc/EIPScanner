@@ -23,6 +23,48 @@ MotorOutputAssemblyObject::_getAssemblyDataFieldReferences() {
           {std::ref(_motor3OutputData)}, {std::ref(_serialAsciiOutputData)}};
 }
 
+assembly::output::MotorOutputData MotorOutputAssemblyObject::getMotor0OutputData() {
+  return _motor0OutputData;
+}
+
+void MotorOutputAssemblyObject::setMotor0OutputData(
+    assembly::output::MotorOutputData motor0OutputData) {
+  _motor0OutputData = motor0OutputData;
+}
+
+// -------------------------------------------------------------
+
+assembly::output::MotorOutputData MotorOutputAssemblyObject::getMotor1OutputData() {
+  return _motor1OutputData;
+}
+
+void MotorOutputAssemblyObject::setMotor1OutputData(
+    assembly::output::MotorOutputData motor1OutputData) {
+  _motor1OutputData = motor1OutputData;
+}
+
+// -------------------------------------------------------------
+
+assembly::output::MotorOutputData MotorOutputAssemblyObject::getMotor2OutputData() {
+  return _motor2OutputData;
+}
+
+void MotorOutputAssemblyObject::setMotor2OutputData(
+    assembly::output::MotorOutputData motor2OutputData) {
+  _motor2OutputData = motor2OutputData;
+}
+
+// -------------------------------------------------------------
+
+assembly::output::MotorOutputData MotorOutputAssemblyObject::getMotor3OutputData() {
+  return _motor3OutputData;
+}
+
+void MotorOutputAssemblyObject::setMotor3OutputData(
+    assembly::output::MotorOutputData motor3OutputData) {
+  _motor3OutputData = motor3OutputData;
+}
+
 } // namespace clearlink
 } // namespace teknic
 } // namespace vendor

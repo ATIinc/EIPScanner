@@ -41,6 +41,18 @@ public:
       const eipScanner::SessionInfoIf::SPtr sessionInfo,
       const eipScanner::MessageRouter::SPtr messageRouter);
 
+  assembly::config::MotorConfigData getMotor0ConfigData();
+  assembly::config::MotorConfigData getMotor1ConfigData();
+  assembly::config::MotorConfigData getMotor2ConfigData();
+  assembly::config::MotorConfigData getMotor3ConfigData();
+
+  // -------------------------------------------------------------
+
+  void setMotor0ConfigData(assembly::config::MotorConfigData motor0ConfigData);
+  void setMotor1ConfigData(assembly::config::MotorConfigData motor1ConfigData);
+  void setMotor2ConfigData(assembly::config::MotorConfigData motor2ConfigData);
+  void setMotor3ConfigData(assembly::config::MotorConfigData motor3ConfigData);
+
 private:
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
   _getAssemblyDataFieldReferences() override;
