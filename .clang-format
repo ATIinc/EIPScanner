@@ -1,5 +1,5 @@
 BasedOnStyle: LLVM
-ColumnLimit: 160
+ColumnLimit: 140
 Standard: Auto
 UseTab: AlignWithSpaces
 # These need to be in sync for tabs to be used
