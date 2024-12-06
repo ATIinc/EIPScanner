@@ -17,10 +17,16 @@
                 }
             ],
             "cwd": "${workspaceFolder}",
-            "linux": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "/usr/bin/gdb"
-            }
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build teknic",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
         }
     ]
 }

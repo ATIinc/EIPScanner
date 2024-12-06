@@ -2,7 +2,7 @@
 // Created by Jan Ritzenhoff on 12/4/2024.
 //
 #include <functional>
-#include <iostream>
+// #include <iostream>
 
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
