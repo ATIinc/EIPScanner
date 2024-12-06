@@ -438,6 +438,10 @@ int main() {
   initializeMotorConfiguration(clearlinkRepresentation.configPtr,
                                motorConnector, -1, -1, -1, -1, 0, 0);
 
+  clearlinkRepresentation.configPtr->getAssembly();
+  clearlinkRepresentation.inputPtr->getAssembly();
+  clearlinkRepresentation.outputPtr->getAssembly();
+
   // clear any existing faults
   while (!faultsClearedSuccessfully(clearlinkRepresentation.inputPtr,
                                     clearlinkRepresentation.outputPtr,
