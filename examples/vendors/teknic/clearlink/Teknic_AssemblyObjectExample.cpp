@@ -3,14 +3,14 @@
 #include <stdexcept>
 #include <thread>
 
-#include "EIPScanner/utils/Logger.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/config/MotorConfigData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.h"
-#include "EIPScanner/vendor/teknic/clearlink/assembly/output/MotorOutputData.h"
 #include <EIPScanner/cip/Types.h>
+#include <EIPScanner/utils/Logger.h>
 #include <EIPScanner/vendor/teknic/clearlink/ConfigAssemblyObject.h>
 #include <EIPScanner/vendor/teknic/clearlink/InputAssemblyObject.h>
 #include <EIPScanner/vendor/teknic/clearlink/OutputAssemblyObject.h>
+#include <EIPScanner/vendor/teknic/clearlink/assembly/config/MotorConfigData.h>
+#include <EIPScanner/vendor/teknic/clearlink/assembly/input/MotorInputData.h>
+#include <EIPScanner/vendor/teknic/clearlink/assembly/output/MotorOutputData.h>
 
 using namespace eipScanner::vendor::teknic;
 using eipScanner::vendor::teknic::clearlink::assembly::config::MotorConfigData;
@@ -180,7 +180,7 @@ ClearlinkIO createClearlinkIOObject(std::string clearlinkIpAddress,
       clearlink::OutputAssemblyObject(sessionInfoPtr, messageRouterPtr);
 
   // read the current values on the Clearlink
-  clearlinkConfiguration.getAssembly();
+  // clearlinkConfiguration.getAssembly();
   clearlinkInput.getAssembly();
   clearlinkOutput.getAssembly();
 
@@ -433,14 +433,21 @@ int main() {
   ClearlinkIO clearlinkRepresentation =
       createClearlinkIOObject("192.168.1.71", 0xAF12);
 
-  uint8_t motorConnector = 0;
+  clearlinkRepresentation.configPtr->setAssembly();
 
+  return 0;
+
+  uint8_t motorConnector = 0;
   initializeMotorConfiguration(clearlinkRepresentation.configPtr,
                                motorConnector, -1, -1, -1, -1, 0, 0);
 
+  clearlinkRepresentation.outputPtr->setAssembly();
+
+  eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+      << "Set assembly and am about to get it";
+
   clearlinkRepresentation.configPtr->getAssembly();
-  clearlinkRepresentation.inputPtr->getAssembly();
-  clearlinkRepresentation.outputPtr->getAssembly();
+  return 0;
 
   // clear any existing faults
   while (!faultsClearedSuccessfully(clearlinkRepresentation.inputPtr,
