@@ -2,128 +2,33 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "delete build folder",
-            "command": "rm",
-            "args": [
-                "-rf",
-                "${workspaceFolder}/build"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-        },
-        {
             "label": "create build folder",
             "command": "mkdir",
             "args": [
                 "-p",
-                "${workspaceFolder}/build"
+                "${workspaceFolder}/examples/build"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn": [
-                "delete build folder"
-            ]
         },
         {
-            "label": "build eip cmake",
+            "label": "build cmake",
             "command": "cmake",
             "args": [
-                "-DEXAMPLE_ENABLED=OFF",
-                "-DCMAKE_BUILD_TYPE=Debug",
-                "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/build",
+                "-DEXAMPLE_ENABLED=ON",
                 ".."
             ],
+            "options": {
+                "cwd": "${workspaceRoot}/examples/build"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/build"
             },
             "dependsOn": [
                 "create build folder"
-            ]
-        },
-        {
-            "label": "build eip",
-            "command": "cmake",
-            "args": [
-                "--build",
-                "."
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/build"
-            },
-            "dependsOn": [
-                "build eip cmake"
-            ]
-        },
-        {
-            "label": "install eip",
-            "command": "cmake",
-            "args": [
-                "--install",
-                ".",
-                "--prefix",
-                "${workspaceFolder}/build"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/build"
-            },
-            "dependsOn": [
-                // "build eip"
-            ]
-        },
-        // everything below this is for JUST the example
-        {
-            "label": "build example folder",
-            "command": "mkdir",
-            "args": [
-                "-p",
-                "${workspaceFolder}/build/examples",
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "dependsOn": [
-                "install eip"
-            ]
-        },
-        {
-            "label": "build example cmake",
-            "command": "cmake",
-            "args": [
-                "-DCMAKE_BUILD_TYPE=Debug",
-                "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/build/examples",
-                "-DCMAKE_CXX_FLAGS=${workspaceFolder}/src",
-                "${workspaceFolder}/examples"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}/build/examples",
-                // "env": {
-                //     "LIBRARY_PATH": "/workspaces/eipscanner/src/",
-                //     "LD_LIBRARY_PATH": "/workspaces/eipscanner/build/src/EIPScanner",
-                // },
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "dependsOn": [
-                "build example folder"
             ]
         },
         {
@@ -134,36 +39,15 @@
                 "."
             ],
             "options": {
-                "cwd": "${workspaceFolder}/build/examples",
-                "env": {
-                    "LIBRARY_PATH": "/workspaces/eipscanner/src/",
-                    "LD_LIBRARY_PATH": "/workspaces/eipscanner/build/src/EIPScanner",
-                },
+                "cwd": "${workspaceRoot}/examples/build"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "dependsOn": [
-                "build example cmake"
+                "build cmake"
             ]
-        },
-        {
-            "label": "debug teknic",
-            "command": "cmake",
-            "args": [
-                "-DCMAKE_BUILD_TYPE=Debug",
-                "--build",
-                "."
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}/examples/build",
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "dependsOn": []
         }
     ]
 }

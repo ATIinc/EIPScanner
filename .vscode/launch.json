@@ -5,22 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Teknic Launch",
+            "name": "Teknic Launch",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/examples/build/teknic_assembly_object_example",
             "args": [],
-            "stopAtEntry": true,
-            "cwd": "${workspaceFolder}",
             "environment": [
                 {
                     "name": "config",
                     "value": "Debug"
                 }
             ],
+            "cwd": "${workspaceFolder}",
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "debug teknic",
+            "preLaunchTask": "build teknic",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

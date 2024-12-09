@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 #   * export LD_LIBRARY_PATH=/usr/local/lib/
 
 # Remember to update the LIBRARY_PATH and LD_LIBRARY_PATH environment variables
-#   * export LIBRARY_PATH=/workspaces/eipscanner/build/src/
-#   * export LD_LIBRARY_PATH=/workspaces/eipscanner/build/src/
+#   * export LIBRARY_PATH=/workspaces/eipscanner/src/
+#   * export LD_LIBRARY_PATH=/workspaces/eipscanner/build/src/EIPScanner
 
 add_executable(explicit_messaging ExplicitMessagingExample.cpp)
 target_link_libraries(explicit_messaging PUBLIC EIPScanner)
