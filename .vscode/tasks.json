@@ -2,33 +2,103 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "delete build folder",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceFolder}/build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+        {
             "label": "create build folder",
             "command": "mkdir",
             "args": [
                 "-p",
-                "${workspaceFolder}/examples/build"
+                "${workspaceFolder}/build"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "dependsOn": [
+                "delete build folder"
+            ]
         },
         {
-            "label": "build cmake",
+            "label": "build eip cmake",
             "command": "cmake",
             "args": [
-                "-DEXAMPLE_ENABLED=ON",
+                "-DEXAMPLE_ENABLED=OFF",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/build",
                 ".."
             ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "options": {
-                "cwd": "${workspaceRoot}/examples/build"
+                "cwd": "${workspaceFolder}/build"
+            },
+            "dependsOn": [
+                "create build folder"
+            ]
+        },
+        {
+            "label": "build eip",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "."
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "dependsOn": [
+                "build eip cmake"
+            ]
+        },
+        // everything related to JUST the example below here
+        {
+            "label": "build example folder",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${workspaceFolder}/build/examples",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                // "build eip"
+            ]
+        },
+        {
+            "label": "build example cmake",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/build/examples",
+                "${workspaceFolder}/examples"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build/examples"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "dependsOn": [
-                "create build folder"
+                "build example folder"
             ]
         },
         {
@@ -39,14 +109,14 @@
                 "."
             ],
             "options": {
-                "cwd": "${workspaceRoot}/examples/build"
+                "cwd": "${workspaceFolder}/build/examples"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "dependsOn": [
-                "build cmake"
+                "build example cmake"
             ]
         }
     ]

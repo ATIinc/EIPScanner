@@ -5,6 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 #   * export LIBRARY_PATH=/usr/local/include/
 #   * export LD_LIBRARY_PATH=/usr/local/lib/
 
+# Remember to update the LIBRARY_PATH and LD_LIBRARY_PATH environment variables
+#   * export LIBRARY_PATH=/workspaces/eipscanner/build/src/
+#   * export LD_LIBRARY_PATH=/workspaces/eipscanner/build/src/
+
 add_executable(explicit_messaging ExplicitMessagingExample.cpp)
 target_link_libraries(explicit_messaging PUBLIC EIPScanner)
 
@@ -26,7 +30,7 @@ target_link_libraries(discovery_example PUBLIC EIPScanner)
 add_executable(yaskawa_assembly_object_example vendors/yaskawa/mp3300iec/Yaskawa_AssemblyObjectExample.cpp)
 target_link_libraries(yaskawa_assembly_object_example PUBLIC EIPScanner)
 
-add_executable(teknic_assembly_object_example vendors/teknic/clearlink/Teknic_AssemblyObjectExample.cpp)
+add_executable(teknic_assembly_object_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_AssemblyObjectExample.cpp)
 target_link_libraries(teknic_assembly_object_example PUBLIC EIPScanner)
 
 if(WIN32)
