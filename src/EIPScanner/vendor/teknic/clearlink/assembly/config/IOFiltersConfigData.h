@@ -41,6 +41,11 @@ private:
   static const size_t DIP_FILTERS_SIZE = 26;
   static const size_t CCIO_FILTERS_SIZE = 8;
 
+  // CONSTANT DEFAULTS
+  const eipScanner::cip::CipUsint DEFAULT_AIP_FILTERS_VALUE = 10;
+  const eipScanner::cip::CipUint DEFAULT_DIP_FILTERS_VALUE = 10000;
+  const eipScanner::cip::CipUsint DEFAULT_CCIO_FILTERS_VALUE = 10;
+
   // Actual field members
   std::vector<eipScanner::cip::CipUsint> _aipFilters;
   std::vector<eipScanner::cip::CipUint> _dipFilters;

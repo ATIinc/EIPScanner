@@ -11,9 +11,10 @@ namespace assembly {
 namespace config {
 
 IOModeConfigData::IOModeConfigData()
-    : BaseAssemblyData(), _aI0Range(), _aI1Range(), _aI2Range(), _aI3Range(),
-      _aO0Range(), _dopPWMFrequency(), _ccioEnable(),
-      _reservedPadding(PADDING_BYTES_SIZE) {}
+    : BaseAssemblyData(), _aI0Range(DEFAULT_AI0_RANGE_VALUE),
+      _aI1Range(DEFAULT_AI1_RANGE_VALUE), _aI2Range(DEFAULT_AI2_RANGE_VALUE),
+      _aI3Range(DEFAULT_AI3_RANGE_VALUE), _aO0Range(DEFAULT_AO0_RANGE_VALUE),
+      _dopPWMFrequency(), _ccioEnable(), _reservedPadding(PADDING_BYTES_SIZE) {}
 
 std::vector<BaseAssemblyData::DataFieldReference>
 IOModeConfigData::_getDataFieldReferences() {

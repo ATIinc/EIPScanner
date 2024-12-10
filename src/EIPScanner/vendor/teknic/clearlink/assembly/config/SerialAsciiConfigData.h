@@ -36,6 +36,17 @@ public:
 private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
 
+  // CONSTANT DEFAULTS
+  const eipScanner::cip::CipUdint DEFAULT_SERIAL_BAUD_RATE_VALUE =
+      115200;
+  const eipScanner::cip::CipDword DEFAULT_INPUT_START_DELIMITER_VALUE =
+      0;
+  const eipScanner::cip::CipDword DEFAULT_INPUT_END_DELIMITER_VALUE = 0;
+  const eipScanner::cip::CipDword DEFAULT_OUTPUT_START_DELIMITER_VALUE =
+      0;
+  const eipScanner::cip::CipDword DEFAULT_OUTPUT_END_DELIMITER_VALUE = 0;
+  const eipScanner::cip::CipUdint DEFAULT_INTPUT_TIMEOUT_VALUE = 10;
+
   // Actual field members
   eipScanner::cip::CipUdint _serialBaudRate;
   eipScanner::cip::CipDword _inputStartDelimiter;

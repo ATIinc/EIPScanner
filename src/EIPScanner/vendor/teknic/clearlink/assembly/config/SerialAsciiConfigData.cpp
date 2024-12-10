@@ -11,9 +11,12 @@ namespace assembly {
 namespace config {
 
 SerialAsciiConfigData::SerialAsciiConfigData()
-    : BaseAssemblyData(), _serialBaudRate(), _inputStartDelimiter(),
-      _inputEndDelimiter(), _outputStartDelimiter(), _outputEndDelimiter(),
-      _inputTimeout() {}
+    : BaseAssemblyData(), _serialBaudRate(DEFAULT_SERIAL_BAUD_RATE_VALUE),
+      _inputStartDelimiter(DEFAULT_INPUT_START_DELIMITER_VALUE),
+      _inputEndDelimiter(DEFAULT_INPUT_END_DELIMITER_VALUE),
+      _outputStartDelimiter(DEFAULT_OUTPUT_START_DELIMITER_VALUE),
+      _outputEndDelimiter(DEFAULT_OUTPUT_END_DELIMITER_VALUE),
+      _inputTimeout(DEFAULT_INTPUT_TIMEOUT_VALUE) {}
 
 std::vector<BaseAssemblyData::DataFieldReference>
 SerialAsciiConfigData::_getDataFieldReferences() {

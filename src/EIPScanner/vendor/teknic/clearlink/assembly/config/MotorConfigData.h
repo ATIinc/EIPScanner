@@ -215,6 +215,29 @@ private:
   // CONSTANTS
   static const size_t PADDING_BYTES_SIZE = 1;
 
+  // CONSTANT DEFAULTS (not sure why these need to be static)
+  static const eipScanner::cip::CipDword DEFAULT_CONFIG_REGISTER_VALUE = 0x0008;
+  static const eipScanner::cip::CipDint DEFAULT_FOLLOW_DIVISOR_VALUE = 1;
+  static const eipScanner::cip::CipDint DEFAULT_FOLLOW_MULTIPLIER_VALUE = 1;
+  static const eipScanner::cip::CipDint DEFAULT_MAX_DECELERATION_VALUE =
+      10000000;
+  static const eipScanner::cip::CipDint DEFAULT_SOFT_LIMIT_1_VALUE = 0;
+  static const eipScanner::cip::CipDint DEFAULT_SOFT_LIMIT_2_VALUE = 0;
+  static const eipScanner::cip::CipSint DEFAULT_POSITIVE_LIMIT_CONNECTOR_VALUE =
+      -1;
+  static const eipScanner::cip::CipSint DEFAULT_NEGATIVE_LIMIT_CONNECTOR_VALUE =
+      -1;
+
+  static const eipScanner::cip::CipSint DEFAULT_HOME_SENSOR_CONNECTOR_VALUE =
+      -1;
+  static const eipScanner::cip::CipSint DEFAULT_BRAKE_OUTPUT_CONNECTOR_VALUE =
+      -1;
+  static const eipScanner::cip::CipSint DEFAULT_STOP_SENSOR_CONNECTOR_VALUE =
+      -1;
+  static const eipScanner::cip::CipSint
+      DEFAULT_TRIGGER_POSITION_CAPTURE_CONNECTOR_VALUE = -1;
+  static const eipScanner::cip::CipSint DEFAULT_FOLLOW_AXIS_VALUE = -1;
+
   // Actual field members
   eipScanner::cip::CipDword _configRegister;
   eipScanner::cip::CipDint _followDivisor;

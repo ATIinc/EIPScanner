@@ -37,10 +37,15 @@ private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
 
   // CONSTANTS
-  static const size_t PADDING_BYTES_SIZE = 4;
+  static const size_t PADDING_BYTES_SIZE = 3;
 
+  // CONSTANT DEFAULTS
+  const eipScanner::cip::CipUdint DEFAULT_ENCODER_VELOCITY_RESOLUTION_VALUE = 100;
+  const eipScanner::cip::CipUsint DEFAULT_RESERVED_SET_BYTE_VALUE = 5;
+  
   // Actual field members
   eipScanner::cip::CipUdint _encoderVelocityResolution;
+  eipScanner::cip::CipUsint _reservedSetByte;
   std::vector<eipScanner::cip::CipByte> _reservedPadding;
 };
 

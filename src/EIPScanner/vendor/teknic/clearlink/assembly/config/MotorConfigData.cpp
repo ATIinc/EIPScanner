@@ -11,12 +11,20 @@ namespace assembly {
 namespace config {
 
 MotorConfigData::MotorConfigData()
-    : BaseAssemblyData(), _configRegister(), _followDivisor(),
-      _followMultiplier(), _maxDeceleration(), _softLimitPosition1(),
-      _softLimitPosition2(), _positiveLimitConnector(),
-      _negativeLimitConnector(), _homeSensorConnector(),
-      _brakeOutputConnector(), _stopSensorConnector(),
-      _triggerPositionCaptureConnector(), _followAxis(),
+    : BaseAssemblyData(), _configRegister(DEFAULT_CONFIG_REGISTER_VALUE),
+      _followDivisor(DEFAULT_FOLLOW_DIVISOR_VALUE),
+      _followMultiplier(DEFAULT_FOLLOW_MULTIPLIER_VALUE),
+      _maxDeceleration(DEFAULT_MAX_DECELERATION_VALUE),
+      _softLimitPosition1(DEFAULT_SOFT_LIMIT_1_VALUE),
+      _softLimitPosition2(DEFAULT_SOFT_LIMIT_2_VALUE),
+      _positiveLimitConnector(DEFAULT_POSITIVE_LIMIT_CONNECTOR_VALUE),
+      _negativeLimitConnector(DEFAULT_NEGATIVE_LIMIT_CONNECTOR_VALUE),
+      _homeSensorConnector(DEFAULT_HOME_SENSOR_CONNECTOR_VALUE),
+      _brakeOutputConnector(DEFAULT_BRAKE_OUTPUT_CONNECTOR_VALUE),
+      _stopSensorConnector(DEFAULT_STOP_SENSOR_CONNECTOR_VALUE),
+      _triggerPositionCaptureConnector(
+          DEFAULT_TRIGGER_POSITION_CAPTURE_CONNECTOR_VALUE),
+      _followAxis(DEFAULT_FOLLOW_AXIS_VALUE),
       _reservedPadding(PADDING_BYTES_SIZE) {}
 
 std::vector<BaseAssemblyData::DataFieldReference>

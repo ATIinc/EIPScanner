@@ -39,6 +39,13 @@ private:
   // CONSTANTS
   static const size_t PADDING_BYTES_SIZE = 1;
 
+  // CONSTANT DEFAULTS
+  const eipScanner::cip::CipUsint DEFAULT_AI0_RANGE_VALUE = 100;
+  const eipScanner::cip::CipUsint DEFAULT_AI1_RANGE_VALUE = 100;
+  const eipScanner::cip::CipUsint DEFAULT_AI2_RANGE_VALUE = 100;
+  const eipScanner::cip::CipUsint DEFAULT_AI3_RANGE_VALUE = 100;
+  const eipScanner::cip::CipUsint DEFAULT_AO0_RANGE_VALUE = 100;
+
   // Actual field members
   eipScanner::cip::CipUsint _aI0Range;
   eipScanner::cip::CipUsint _aI1Range;

@@ -11,13 +11,16 @@ namespace assembly {
 namespace config {
 
 EncoderConfigData::EncoderConfigData()
-    : BaseAssemblyData(), _encoderVelocityResolution(),
+    : BaseAssemblyData(),
+      _encoderVelocityResolution(DEFAULT_ENCODER_VELOCITY_RESOLUTION_VALUE),
+      _reservedSetByte(DEFAULT_RESERVED_SET_BYTE_VALUE),
       _reservedPadding(PADDING_BYTES_SIZE) {}
 
 std::vector<BaseAssemblyData::DataFieldReference>
 EncoderConfigData::_getDataFieldReferences() {
 
-  return {std::ref(_encoderVelocityResolution), std::ref(_reservedPadding)};
+  return {std::ref(_encoderVelocityResolution), std::ref(_reservedSetByte),
+          std::ref(_reservedPadding)};
 }
 } // namespace config
 } // namespace assembly
