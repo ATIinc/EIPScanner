@@ -181,9 +181,12 @@ ClearlinkIO createClearlinkIOObject(std::string clearlinkIpAddress,
       clearlink::OutputAssemblyObject(sessionInfoPtr, messageRouterPtr);
 
   //  NOTE: NEED to WRITE the default configuration value FIRST. If not, the read values are ALL zeros
+  //    THIS WILL NOT WORK UNLESS THE DEFAULT CONFIGURATION IS WRITTEN FIRST
+  //      * Due to the fact that the Clearlink does not return the default configuration on power-up
   clearlinkConfiguration.setAssembly(); 
 
   // read the current values on the Clearlink
+  clearlinkConfiguration.getAssembly(); 
   clearlinkInput.getAssembly();
   clearlinkOutput.getAssembly();
 
