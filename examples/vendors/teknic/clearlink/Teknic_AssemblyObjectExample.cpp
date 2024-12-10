@@ -1,4 +1,5 @@
 #include <chrono>
+#include <cstdint>
 #include <memory>
 #include <stdexcept>
 #include <thread>
@@ -180,7 +181,7 @@ ClearlinkIO createClearlinkIOObject(std::string clearlinkIpAddress,
       clearlink::OutputAssemblyObject(sessionInfoPtr, messageRouterPtr);
 
   // read the current values on the Clearlink
-  // clearlinkConfiguration.getAssembly();
+  clearlinkConfiguration.getAssembly();
   clearlinkInput.getAssembly();
   clearlinkOutput.getAssembly();
 
@@ -340,6 +341,8 @@ void setMotorPositionMoveCommand(
   motorOutputData.setOutputRegisterFlag(
       MotorOutputData::OutputFlag::LoadVelocityMove, false);
 
+  setMotorOutput(clearlinkOutputObjectPtr, motorConnectorId, motorOutputData);
+
   loadMotorMoveCommand(clearlinkOutputObjectPtr, motorConnectorId,
                        MotorOutputData::OutputFlag::LoadPositionMove,
                        maxVelocitySteps, maxAccelerationSteps);
@@ -390,6 +393,15 @@ MoveInstructionState moveToMotorPositionNonBlocking(
                             positionMoveCommanded &&
                             absoluteMove == absolutePositionCommanded;
 
+  // eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+  //     << "Previous set position: " << previouslySetTargetPosition
+  //     << " and currently position " << currentMotorPosition
+  //     << " and currently command " << positionSetPoint
+  //     << " and is absolute move "
+  //     << (absolutePositionCommanded ? "true" : "false")
+  //     << " so position already set " << (positionAlreadySet ? "true" :
+  //     "false");
+
   bool motorInMotion =
       motorInputData.hasMotorStatus(MotorInputData::StepsActive);
 
@@ -413,6 +425,10 @@ MoveInstructionState moveToMotorPositionNonBlocking(
   if (positionAlreadySet &&
       motorInputData.hasMotorStatus(MotorInputData::LoadPositionMoveAck)) {
     // The move is currently happening
+    eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+        << (absoluteMove ? "Absolute" : "Relative")
+        << " move to " << previouslySetTargetPosition << " is currently at "
+        << currentMotorPosition;
     return MoveInstructionState::IN_PROGRESS;
   }
 
@@ -427,34 +443,35 @@ MoveInstructionState moveToMotorPositionNonBlocking(
   return MoveInstructionState::IN_PROGRESS;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
+
+  int32_t inputPositionalSteps = 1000;
+  bool isAbsoluteMove = false;
+
+  if (argc > 1) {
+    inputPositionalSteps = std::stoi(argv[1]);
+  }
+
+  if (argc > 2) {
+    isAbsoluteMove = std::stoi(argv[2]);
+  }
+
+  eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+      << "Commanding move with " << inputPositionalSteps << " as absolute move "
+      << (isAbsoluteMove ? "true" : "false");
+
   // Get the clearlinkIO (given a variable IP address and the default
   // Ethernet/IP port)
   ClearlinkIO clearlinkRepresentation =
       createClearlinkIOObject("192.168.1.71", 0xAF12);
 
-  clearlinkRepresentation.configPtr->setAssembly();
-
-  return 0;
-
   uint8_t motorConnector = 0;
-  initializeMotorConfiguration(clearlinkRepresentation.configPtr,
-                               motorConnector, -1, -1, -1, -1, 0, 0);
-
-  clearlinkRepresentation.outputPtr->setAssembly();
-
-  eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
-      << "Set assembly and am about to get it";
-
-  clearlinkRepresentation.configPtr->getAssembly();
-  return 0;
-
-  // clear any existing faults
-  while (!faultsClearedSuccessfully(clearlinkRepresentation.inputPtr,
-                                    clearlinkRepresentation.outputPtr,
-                                    motorConnector)) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(250));
+  for (uint8_t connectorId = 0; connectorId < 4; ++connectorId) {
+    initializeMotorConfiguration(clearlinkRepresentation.configPtr, connectorId,
+                                 -1, -1, -1, -1, 0, 0);
   }
+
+  clearlinkRepresentation.configPtr->setAssembly();
 
   // perform a move
   MoveInstructionState movementState = MoveInstructionState::COMPLETED;
@@ -463,6 +480,12 @@ int main() {
   do {
     movementState = moveToMotorPositionNonBlocking(
         clearlinkRepresentation.inputPtr, clearlinkRepresentation.outputPtr,
-        motorConnector, 1000, maxVelocitySteps, maxAccelerationSteps, false);
+        motorConnector, inputPositionalSteps, maxVelocitySteps,
+        maxAccelerationSteps, isAbsoluteMove);
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(250));
+
+    clearlinkRepresentation.inputPtr->getAssembly();
+    clearlinkRepresentation.outputPtr->getAssembly();
   } while (movementState != MoveInstructionState::COMPLETED);
 }
