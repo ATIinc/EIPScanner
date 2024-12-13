@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "create build folder",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${workspaceFolder}/examples/build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "build cmake",
+            "command": "cmake",
+            "args": [
+                "-DEXAMPLE_ENABLED=ON",
+                ".."
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/examples/build"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "create build folder"
+            ]
+        },
+        {
+            "label": "build teknic",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "."
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/examples/build"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "build cmake"
+            ]
+        }
+    ]
+}

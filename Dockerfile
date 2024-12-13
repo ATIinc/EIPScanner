@@ -1,6 +1,6 @@
 FROM gcc:8 AS prepare_testing
 
-RUN apt-get update && apt-get install -y git cmake
+RUN apt-get update && apt-get install -y git cmake curl
 
 RUN mkdir /git
 WORKDIR /git
@@ -23,7 +23,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
-    && apt-get install -y sudo \
+    && apt-get install -y sudo gdb \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 

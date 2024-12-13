@@ -9,3 +9,17 @@ Therefore the paths are `"EIPScanner/..."` rather than `<EIPScanner/...>`
 ## Requirements
 
 The GMock Library: `sudo apt install libgmock-dev`
+
+## Building the tester
+
+```shell
+# in EIPScanner root directory
+mkdir build && cd build
+cmake -DTEST_ENABLED=ON ..
+cmake --build .
+```
+
+# Testing the Data 
+
+Can use: `./test/test_eipscanner --gtest_filter=:TestMotorInputAssembly.*:TestMotorOutputAssembly.*:TestMotorConfigAssembly.*`
+* And add to it with future classes

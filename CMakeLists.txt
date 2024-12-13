@@ -32,6 +32,16 @@ include_directories(src)
 # Actually add the source files for the project
 add_subdirectory(src/${CMAKE_PROJECT_NAME})
 
+if (TEST_ENABLED)
+    add_subdirectory(test)
+endif()
+
+configure_file(EIPScanner.pc.in EIPScanner.pc @ONLY)
+
+install(FILES ${CMAKE_BINARY_DIR}/EIPScanner.pc DESTINATION lib/pkgconfig)
+
+
+# Build the examples (which pull from the installed directory)
 if (EXAMPLE_ENABLED)
     set(EXAMPLES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/examples)
 
@@ -44,12 +54,3 @@ if (EXAMPLE_ENABLED)
     # Execute code during a `cmake --build` command
     add_custom_target(EXAMPLES_TARGETS ALL COMMAND ${CMAKE_COMMAND} --build ${EXAMPLES_DIR}/build WORKING_DIRECTORY ${EXAMPLES_DIR}/build COMMENT "Building the examples sub-project")
 endif()
-
-if (TEST_ENABLED)
-    add_subdirectory(test)
-endif()
-
-
-configure_file(EIPScanner.pc.in EIPScanner.pc @ONLY)
-
-install(FILES ${CMAKE_BINARY_DIR}/EIPScanner.pc DESTINATION lib/pkgconfig)

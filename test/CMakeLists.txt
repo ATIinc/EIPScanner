@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 enable_testing()
 include_directories("${PROJECT_SOURCE_DIR}/src")
 include_directories("${PROJECT_SOURCE_DIR}/test")
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/test/cmake/")
 
 find_package(GTest REQUIRED)
 find_package(GMock REQUIRED)
@@ -27,16 +27,24 @@ add_executable(test_eipscanner
 
         utils/TestBuffer.cpp
 
-        vendor/ra/powerFlex525/TestDPIFaultManager.cpp
-        vendor/ra/powerFlex525/TestDPIFaultObject.cpp
-        vendor/ra/powerFlex525/TestDPIFaultParameter.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultManager.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultObject.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultParameter.cpp
+
+        vendor/teknic/clearlink/TestIOInputData.cpp
+        vendor/teknic/clearlink/TestEncoderInputData.cpp
+        vendor/teknic/clearlink/TestMotorInputData.cpp
+        vendor/teknic/clearlink/TestSerialAsciiInputData.cpp
+        vendor/teknic/clearlink/TestClearlinkInputAssembly.cpp
+        vendor/teknic/clearlink/TestClearlinkOutputAssembly.cpp
+        vendor/teknic/clearlink/TestClearlinkConfigAssembly.cpp
 
         TestDiscoveryManager.cpp
         TestIdentityObject.cpp
         TestMessageRouter.cpp
         TestParameterObject.cpp
         test.cpp
-        )
+)
 
 message(STATUS ${GTEST_BOTH_LIBRARIES})
 message(STATUS ${GMOCK_BOTH_LIBRARIES})

@@ -60,8 +60,41 @@ option(ENABLE_VENDOR_SRC "Enable vendor source" OFF)
 ```
 3) manually comment needed files in src/vendor/CMakeLists.txt
 
+## Testing
+
+To build the tests:
+
+1) set this option in CmakeLists.txt
+```cmake
+option(TEST_ENABLED "Enable unit test" ON)
+```
+
+2) set the cmake build flag
+```shell
+# in EIPScanner root directory
+mkdir build && cd build
+cmake -DTEST_ENABLED=ON ..
+cmake --build .
+```
+
+## IntelliSense
+
+In order to allow the `clangd` server to properly find all of the files being updated, the `compile_commands.json` file needs to be updated.
+
+* I the CMakeLists.txt files have all been updated correctly, the `compile_commands.json` file can be auto-generated
+
+1) generate the file in the `build` directory
+```shell
+cd build
+cmake -DTEST_ENABLED=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+```
+
+2) replace the `compile_commands.json` file with the `build/compile_commands.json` file
+
 ## Authors
 
 Aleksey Timin
 
 Adam Roth
+
+Jan Ritzenhoff
