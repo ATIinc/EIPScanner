@@ -14,10 +14,7 @@ eipScanner::utils::Buffer &operator<<(eipScanner::utils::Buffer &outStream,
   std::vector<BaseAssemblyData::DataFieldReference> classAttributes =
       assemblyData._getDataFieldReferences();
 
-  for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size();
-       ++fieldIndex) {
-
-    auto fieldReference = classAttributes[fieldIndex];
+  for (auto &fieldReference : classAttributes) {
 
     // pass a reference of the buffer to the lambda function
     std::visit([&outStream](auto &fieldRef) { outStream << fieldRef; },
@@ -32,14 +29,13 @@ eipScanner::utils::Buffer &operator>>(eipScanner::utils::Buffer &inStream,
   std::vector<BaseAssemblyData::DataFieldReference> classAttributes =
       assemblyData._getDataFieldReferences();
 
-  for (uint8_t fieldIndex = 0; fieldIndex < classAttributes.size();
-       ++fieldIndex) {
-    auto fieldReference = classAttributes[fieldIndex];
+  for (auto &fieldReference : classAttributes) {
 
-    // pass a reference of the inStream to the lambda function and the first
+     // pass a reference of the inStream to the lambda function and the first
     // argument of the lambda function is the actual field reference
     std::visit([&inStream](auto &fieldRef) { inStream >> fieldRef; },
                fieldReference);
+
   }
 
   return inStream;

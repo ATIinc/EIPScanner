@@ -3,7 +3,6 @@
 //
 #include <functional>
 #include <ostream>
-// #include <iostream>
 
 #include "EIPScanner/utils/Logger.h"
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
@@ -41,23 +40,21 @@ void BaseAssemblyObject::getAssembly() {
   eipScanner::utils::Buffer getBuffer(getAssemblyResponse.getData());
 
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
-      subAssemblyReferences = _getAssemblyDataFieldReferences();
+      assemblyDataFieldReference = _getAssemblyDataFieldReferences();
 
-  for (uint fieldIndex = 0; fieldIndex < subAssemblyReferences.size();
-       ++fieldIndex) {
-    getBuffer >> subAssemblyReferences[fieldIndex];
+  for (auto &subAssemblyReference : assemblyDataFieldReference) {
+    getBuffer >> subAssemblyReference;
   }
 }
 
 void BaseAssemblyObject::setAssembly() {
   std::vector<std::reference_wrapper<assembly::BaseAssemblyData>>
-      subAssemblyReferences = _getAssemblyDataFieldReferences();
+      assemblyDataFieldReference = _getAssemblyDataFieldReferences();
 
   eipScanner::utils::Buffer fullAssemblyBuffer;
 
-  for (uint fieldIndex = 0; fieldIndex < subAssemblyReferences.size();
-       ++fieldIndex) {
-    fullAssemblyBuffer << subAssemblyReferences[fieldIndex];
+  for (auto &subAssemblyReference : assemblyDataFieldReference) {
+    fullAssemblyBuffer << subAssemblyReference;
   }
 
   // actually send the explicit message

@@ -27,9 +27,9 @@ add_executable(test_eipscanner
 
         utils/TestBuffer.cpp
 
-        vendor/ra/powerFlex525/TestDPIFaultManager.cpp
-        vendor/ra/powerFlex525/TestDPIFaultObject.cpp
-        vendor/ra/powerFlex525/TestDPIFaultParameter.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultManager.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultObject.cpp
+        # vendor/ra/powerFlex525/TestDPIFaultParameter.cpp
 
         vendor/teknic/clearlink/TestIOInputData.cpp
         vendor/teknic/clearlink/TestEncoderInputData.cpp

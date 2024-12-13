@@ -33,6 +33,9 @@ target_link_libraries(yaskawa_assembly_object_example PUBLIC EIPScanner)
 add_executable(teknic_assembly_object_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_AssemblyObjectExample.cpp)
 target_link_libraries(teknic_assembly_object_example PUBLIC EIPScanner)
 
+add_executable(teknic_output_assembly_object_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_OutputAssemblyObjectExample.cpp)
+target_link_libraries(teknic_output_assembly_object_example PUBLIC EIPScanner)
+
 add_executable(teknic_explicit_message_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_ExplicitMessagingExample.cpp)
 target_link_libraries(teknic_explicit_message_example PUBLIC EIPScanner)
 

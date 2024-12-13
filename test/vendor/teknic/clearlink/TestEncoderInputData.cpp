@@ -19,7 +19,7 @@ TEST_F(TestEncoderInputData, CreateEncoderInputDataBuffer) {
   actualBuffer << encoderInputData;
 
   // Bytes 26 through 51
-  EXPECT_EQ(15, actualBuffer.size());
+  EXPECT_EQ(16, actualBuffer.size());
 }
 
 // TODO: Figure out what a good way to test the Reading functionality

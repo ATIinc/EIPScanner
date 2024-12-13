@@ -319,6 +319,13 @@ void loadMotorMoveCommand(
   setMotorOutput(clearlinkOutputObjectPtr, motorConnectorId, motorOutputData);
   clearlinkOutputObjectPtr->setAssembly();
 
+    eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+      << "Writing output with:" 
+      << "  flag: " << motorOutputData.getOutputRegister()
+      << "  vel: " << motorOutputData.getVelocityLimit()
+      << "  accel: " << motorOutputData.getAccelerationLimit()
+      << "  deccel: " << motorOutputData.getDecelerationLimit();
+
   if (moveAlreadySet) {
     motorOutputData.setOutputRegisterFlag(loadMoveFlag, true);
     setMotorOutput(clearlinkOutputObjectPtr, motorConnectorId, motorOutputData);
@@ -492,5 +499,25 @@ int main(int argc, char *argv[]) {
 
     clearlinkRepresentation.inputPtr->getAssembly();
     clearlinkRepresentation.outputPtr->getAssembly();
+
+    auto motorInput = getMotorInput(clearlinkRepresentation.inputPtr, motorConnector);
+		eipScanner::utils::Logger(eipScanner::utils::LogLevel::INFO)
+				<< "Reading input with:" 
+				<< "  pos: " << motorInput.getCommandedPosition()
+				<< "  vel: " << motorInput.getCommandedVelocity()
+				<< "  targetPos: " << motorInput.getTargetPosition()
+				<< "  targetVel: " << motorInput.getTargetVelocity()
+				<< "  status: " << motorInput.getMotorStatus();
+
   } while (movementState != MoveInstructionState::COMPLETED);
+
+  // Status first loop = 611330       == 0b10010101010000000010
+  // 		AtTargetPosition  = False
+  // 		StepsActive       = True
+  //    Enabled           = True
+  //    Positional Move   = True
+  //    HLFB_On           = True
+  //    PositionMoveAck   = True
+  // Status pre-final loop = 611329   == 0b10010101010000000001
+  // Status finished loop = 4096      == 0b00000001000000000000
 }

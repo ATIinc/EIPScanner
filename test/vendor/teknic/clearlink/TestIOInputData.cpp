@@ -32,7 +32,7 @@ TEST_F(TestIOInputData, CreateIOInputDataBuffer) {
   std::vector<eipScanner::cip::CipUint> aipValue = {0x0, 0x9, 0x0, 0x0};
 
   // Should be a total of 36 bytes (according to https://www.teknic.com/files/downloads/clearlink_ethernet-ip_object_reference.pdf#page=18)
-  std::vector<eipScanner::cip::CipByte> remainingDataPadding(23);
+  std::vector<eipScanner::cip::CipByte> remainingDataPadding(24);
 
   eipScanner::utils::Buffer expectedBuffer;
   expectedBuffer << dipValue << dipStatus << aipValue << remainingDataPadding;

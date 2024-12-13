@@ -96,3 +96,5 @@ cmake -DTEST_ENABLED=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 Aleksey Timin
 
 Adam Roth
+
+Jan Ritzenhoff

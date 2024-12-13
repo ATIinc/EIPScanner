@@ -1,6 +1,6 @@
 FROM gcc:8 AS prepare_testing
 
-RUN apt-get update && apt-get install -y git cmake
+RUN apt-get update && apt-get install -y git cmake curl
 
 RUN mkdir /git
 WORKDIR /git
