@@ -23,7 +23,7 @@ namespace cip {
 		CipUsint _serviceCode;
 		EPath _ePath;
 		std::vector<uint8_t> _data;
-        bool _use_8_bit_path_segments;
+		bool _use_8_bit_path_segments;
 	};
 
 }
