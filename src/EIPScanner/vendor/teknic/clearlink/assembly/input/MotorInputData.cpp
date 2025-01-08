@@ -74,54 +74,54 @@ eipScanner::cip::CipDword MotorInputData::getMotorShutdowns() const {
 // --------------------------------------------
 
 bool MotorInputData::hasMotorStatus(MotorStatus specificStatus) {
-  return _motorStatus & (0x1 << specificStatus);
+  return _motorStatus & (0x1 << static_cast<uint8_t>(specificStatus));
 }
 
 std::string MotorInputData::motorStatusToString(MotorStatus specificStatus) {
   switch (specificStatus) {
-  case AtTargetPosition:
+  case MotorStatus::AtTargetPosition:
     return "AtTargetPosition";
-  case StepsActive:
+  case MotorStatus::StepsActive:
     return "StepsActive";
-  case AtVelocity:
+  case MotorStatus::AtVelocity:
     return "AtVelocity";
-  case MoveDirection:
+  case MotorStatus::MoveDirection:
     return "MoveDirection";
-  case InPositiveLimit:
+  case MotorStatus::InPositiveLimit:
     return "InPositiveLimit";
-  case InNegativeLimit:
+  case MotorStatus::InNegativeLimit:
     return "InNegativeLimit";
-  case InEStopSensor:
+  case MotorStatus::InEStopSensor:
     return "InEStopSensor";
-  case InHomeSensor:
+  case MotorStatus::InHomeSensor:
     return "InHomeSensor";
-  case Homing:
+  case MotorStatus::Homing:
     return "Homing";
-  case MotorInFault:
+  case MotorStatus::MotorInFault:
     return "MotorInFault";
-  case Enabled:
+  case MotorStatus::Enabled:
     return "Enabled";
-  case OutsideSoftLimits:
+  case MotorStatus::OutsideSoftLimits:
     return "OutsideSoftLimits";
-  case PositionalMove:
+  case MotorStatus::PositionalMove:
     return "PositionalMove";
-  case HasHomed:
+  case MotorStatus::HasHomed:
     return "HasHomed";
-  case HLFB_On:
+  case MotorStatus::HLFB_On:
     return "HLFB_On";
-  case HasTorqueMeasurement:
+  case MotorStatus::HasTorqueMeasurement:
     return "HasTorqueMeasurement";
-  case ReadyToHome:
+  case MotorStatus::ReadyToHome:
     return "ReadyToHome";
-  case ShutdownsPresent:
+  case MotorStatus::ShutdownsPresent:
     return "ShutdownsPresent";
-  case AddToPositionAck:
+  case MotorStatus::AddToPositionAck:
     return "AddToPositionAck";
-  case LoadPositionMoveAck:
+  case MotorStatus::LoadPositionMoveAck:
     return "LoadPositionMoveAck";
-  case LoadVelocityMoveAck:
+  case MotorStatus::LoadVelocityMoveAck:
     return "LoadVelocityMoveAck";
-  case ClearMotorFaultAck:
+  case MotorStatus::ClearMotorFaultAck:
     return "ClearMotorFaultAck";
   default:
     return "Unknown State";
@@ -131,36 +131,36 @@ std::string MotorInputData::motorStatusToString(MotorStatus specificStatus) {
 // --------------------------------------------
 
 bool MotorInputData::hasMotorShutdown(MotorShutdown specificShutdown) {
-  return _motorShutdowns & (0x1 << specificShutdown);
+  return _motorShutdowns & (0x1 << static_cast<uint8_t>(specificShutdown));
 }
 
 std::string
 MotorInputData::motorShutdownToString(MotorShutdown specificShutdown) {
   switch (specificShutdown) {
 
-  case MotionCanceled_CommandWhileShutdown:
+  case MotorShutdown::MotionCanceled_CommandWhileShutdown:
     return "MotionCanceled_CommandWhileShutdown";
-  case MotionCanceled_PosLimit:
+  case MotorShutdown::MotionCanceled_PosLimit:
     return "MotionCanceled_PosLimit";
-  case MotionCanceled_NegLimit:
+  case MotorShutdown::MotionCanceled_NegLimit:
     return "MotionCanceled_NegLimit";
-  case MotionCanceled_SensorEStop:
+  case MotorShutdown::MotionCanceled_SensorEStop:
     return "MotionCanceled_SensorEStop";
-  case MotionCanceled_SoftwareEStop:
+  case MotorShutdown::MotionCanceled_SoftwareEStop:
     return "MotionCanceled_SoftwareEStop";
-  case MotionCanceled_MotorDisabled:
+  case MotorShutdown::MotionCanceled_MotorDisabled:
     return "MotionCanceled_MotorDisabled";
-  case MotionCanceled_SoftLimitExceeded:
+  case MotorShutdown::MotionCanceled_SoftLimitExceeded:
     return "MotionCanceled_SoftLimitExceeded";
-  case MotionCanceled_FollowerAxisFault:
+  case MotorShutdown::MotionCanceled_FollowerAxisFault:
     return "MotionCanceled_FollowerAxisFault";
-  case MotionCanceled_CommandWhileFollowing:
+  case MotorShutdown::MotionCanceled_CommandWhileFollowing:
     return "MotionCanceled_CommandWhileFollowing";
-  case MotionCanceled_HomingNotReady:
+  case MotorShutdown::MotionCanceled_HomingNotReady:
     return "MotionCanceled_HomingNotReady";
-  case MotorFaulted:
+  case MotorShutdown::MotorFaulted:
     return "MotorFaulted";
-  case FollowingOverspeed:
+  case MotorShutdown::FollowingOverspeed:
     return "FollowingOverspeed";
   default:
     return "Unknown State"; // 13 - 31 are reserved;

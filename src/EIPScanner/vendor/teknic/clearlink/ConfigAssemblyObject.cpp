@@ -24,6 +24,19 @@ ConfigAssemblyObject::_getAssemblyDataFieldReferences() {
           {std::ref(_motor3ConfigData)},  {std::ref(_serialAsciiConfigData)}};
 }
 
+// -------------------------------------------------------------
+
+assembly::config::IOModeConfigData ConfigAssemblyObject::getIOModeConfigData() {
+  return _ioModeConfigData;
+}
+
+void ConfigAssemblyObject::setIOModeConfigData(
+    assembly::config::IOModeConfigData ioModeConfigData) {
+  _ioModeConfigData = ioModeConfigData;
+}
+
+// -------------------------------------------------------------
+
 assembly::config::MotorConfigData ConfigAssemblyObject::getMotor0ConfigData() {
   return _motor0ConfigData;
 }

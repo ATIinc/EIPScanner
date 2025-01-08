@@ -39,6 +39,7 @@ public:
   OutputAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
                        const eipScanner::MessageRouter::SPtr messageRouter);
 
+  assembly::output::IOOutputData getIOOutputData();
   assembly::output::MotorOutputData getMotor0OutputData();
   assembly::output::MotorOutputData getMotor1OutputData();
   assembly::output::MotorOutputData getMotor2OutputData();
@@ -46,6 +47,7 @@ public:
 
   // -------------------------------------------------------------
 
+  void setIOOutputData(assembly::output::IOOutputData ioOutputData);
   void setMotor0OutputData(assembly::output::MotorOutputData motor0OutputData);
   void setMotor1OutputData(assembly::output::MotorOutputData motor1OutputData);
   void setMotor2OutputData(assembly::output::MotorOutputData motor2OutputData);

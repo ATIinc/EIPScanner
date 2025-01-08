@@ -41,6 +41,7 @@ public:
   ConfigAssemblyObject(const eipScanner::SessionInfoIf::SPtr sessionInfo,
                        const eipScanner::MessageRouter::SPtr messageRouter);
 
+  assembly::config::IOModeConfigData getIOModeConfigData();
   assembly::config::MotorConfigData getMotor0ConfigData();
   assembly::config::MotorConfigData getMotor1ConfigData();
   assembly::config::MotorConfigData getMotor2ConfigData();
@@ -48,6 +49,7 @@ public:
 
   // -------------------------------------------------------------
 
+  void setIOModeConfigData(assembly::config::IOModeConfigData ioModeConfigData);
   void setMotor0ConfigData(assembly::config::MotorConfigData motor0ConfigData);
   void setMotor1ConfigData(assembly::config::MotorConfigData motor1ConfigData);
   void setMotor2ConfigData(assembly::config::MotorConfigData motor2ConfigData);
