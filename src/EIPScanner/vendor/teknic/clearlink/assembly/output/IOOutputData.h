@@ -46,7 +46,7 @@ public:
   };
 
   // Used to configure IO_0 as a digital output rather than an analog output
-  eipScanner::cip::CipUsint DEFAULT_PWM_VALUE = 100;
+  eipScanner::cip::CipUsint DEFAULT_PWM_VALUE = 0;
 
   // -------------------------------------------------------------
 

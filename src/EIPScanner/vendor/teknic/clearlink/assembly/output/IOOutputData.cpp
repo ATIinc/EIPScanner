@@ -44,10 +44,7 @@ bool IOOutputData::getDigitalOutputValue(DigitalOutput output) {
 void IOOutputData::setDigitalOutputValue(DigitalOutput output,
                                          bool outputValue) {
 
-  // special case as this is also an analog pin
-  if (output == DigitalOutput::IO_0) {
-    setDigitalOutputPWM(output, DEFAULT_PWM_VALUE);
-  }
+  setDigitalOutputPWM(output, DEFAULT_PWM_VALUE);
 
   // There are only 6 outputs (only need the first byte)
   if (outputValue) {
