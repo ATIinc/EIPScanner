@@ -289,8 +289,8 @@ MotorOutputData initializeMotorOutputdata()
 
 bool faultsCleared(MotorInputData motorInputData)
 {
-	return !motorInputData.hasMotorStatus(MotorInputData::MotorInFault) &&
-	       !motorInputData.hasMotorStatus(MotorInputData::ShutdownsPresent);
+	return !motorInputData.hasMotorStatus(MotorInputData::MotorStatus::MotorInFault) &&
+	       !motorInputData.hasMotorStatus(MotorInputData::MotorStatus::ShutdownsPresent);
 }
 
 MotorOutputData createClearFaultsOutput(MotorInputData motorInputData, MotorOutputData previousOutputData)
@@ -302,7 +302,7 @@ MotorOutputData createClearFaultsOutput(MotorInputData motorInputData, MotorOutp
    *
    * toggling the ENABLE bit can clear E-Stop issues as well
    */
-	if (motorInputData.hasMotorStatus(MotorInputData::MotorInFault))
+	if (motorInputData.hasMotorStatus(MotorInputData::MotorStatus::MotorInFault))
 	{
 
 		bool clearFaultsSet = previousOutputData.hasFlagSet(MotorOutputData::ClearMotorFault);
@@ -317,7 +317,7 @@ MotorOutputData createClearFaultsOutput(MotorInputData motorInputData, MotorOutp
    * the ClearShutdown bit If the motor does NOT have a shutdown present, UNset
    * the ClearShutdown bit
    */
-	if (motorInputData.hasMotorStatus(MotorInputData::ShutdownsPresent))
+	if (motorInputData.hasMotorStatus(MotorInputData::MotorStatus::ShutdownsPresent))
 	{
 		bool clearAlertsSet = previousOutputData.hasFlagSet(MotorOutputData::ClearAlerts);
 
@@ -405,18 +405,18 @@ moveToMotorPositionNonBlocking(MotorInputData motorInputData,
 	int32_t previouslySetTargetPosition = previousOutputData.getMoveDistance();
 	int32_t currentMotorPosition = motorInputData.getCommandedPosition();
 
-	bool positionMoveCommanded = motorInputData.hasMotorStatus(MotorInputData::PositionalMove);
+	bool positionMoveCommanded = motorInputData.hasMotorStatus(MotorInputData::MotorStatus::PositionalMove);
 	bool absolutePositionCommanded = previousOutputData.hasFlagSet(MotorOutputData::AbsoluteMove);
 	bool positionAlreadySet = positionSetPoint == previouslySetTargetPosition && positionMoveCommanded &&
 	                          absoluteMove == absolutePositionCommanded;
 
-	bool motorInMotion = motorInputData.hasMotorStatus(MotorInputData::StepsActive);
+	bool motorInMotion = motorInputData.hasMotorStatus(MotorInputData::MotorStatus::StepsActive);
 
 	// set the new position if:
 	// 1. The motor is not currently at the desired position
 	// 2. The motor is not currently moving to the desired velocity
 
-	if (positionAlreadySet && motorInputData.hasMotorStatus(MotorInputData::AtTargetPosition))
+	if (positionAlreadySet && motorInputData.hasMotorStatus(MotorInputData::MotorStatus::AtTargetPosition))
 	{
 		return {MoveInstructionState::COMPLETED, createReachedPositionOutput(motorInputData, previousOutputData)};
 	}
@@ -427,7 +427,7 @@ moveToMotorPositionNonBlocking(MotorInputData motorInputData,
 		return {MoveInstructionState::COMPLETED, std::nullopt};
 	}
 
-	if (positionAlreadySet && motorInputData.hasMotorStatus(MotorInputData::LoadPositionMoveAck))
+	if (positionAlreadySet && motorInputData.hasMotorStatus(MotorInputData::MotorStatus::LoadPositionMoveAck))
 	{
 		// The move is currently happening
 		return {MoveInstructionState::IN_PROGRESS, std::nullopt};
@@ -541,7 +541,7 @@ int main(int argc, char *argv[]) {
   // Get the clearlinkIO (given a variable IP address and the default
   // Ethernet/IP port)
   ClearlinkIO clearlinkRepresentation =
-      createClearlinkIOObjects("192.168.1.71", 0xAF12);
+      createClearlinkIOObjects("172.31.19.10", 0xAF12);
 
   for (uint8_t connectorId = 0; connectorId < 4; ++connectorId) {
     auto motorConfig = initializeMotorConfigData(-1, -1, -1, -1, 0, 0);
