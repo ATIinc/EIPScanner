@@ -30,6 +30,9 @@ target_link_libraries(discovery_example PUBLIC EIPScanner)
 add_executable(yaskawa_assembly_object_example vendors/yaskawa/mp3300iec/Yaskawa_AssemblyObjectExample.cpp)
 target_link_libraries(yaskawa_assembly_object_example PUBLIC EIPScanner)
 
+add_executable(teknic_digital_inputs_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_DigitalInputsExample.cpp)
+target_link_libraries(teknic_digital_inputs_example PUBLIC EIPScanner)
+
 add_executable(teknic_digital_outputs_example ${CMAKE_CURRENT_SOURCE_DIR}/vendors/teknic/clearlink/Teknic_DigitalOutputsExample.cpp)
 target_link_libraries(teknic_digital_outputs_example PUBLIC EIPScanner)
 
