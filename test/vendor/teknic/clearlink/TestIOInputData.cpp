@@ -8,19 +8,34 @@
 
 using namespace eipScanner::vendor::teknic::clearlink::assembly::input;
 
-class TestIOInputData : public ::testing::Test, public IOInputData {
+class TestIOInputDataRig : public ::testing::Test, public IOInputData {
 public:
   void SetUp() override { }
 };
 
-TEST_F(TestIOInputData, CreateIOInputDataBuffer) {
+class TestIOInputData : public IOInputData
+{
+public:
+  void publicSetDipValue(const std::vector<eipScanner::cip::CipBool> dipValue) {
+    setDipValue(dipValue);
+  }
+  void publicSetDipStatus(const std::vector<eipScanner::cip::CipBool> dipStatus) {
+    setDipStatus(dipStatus);
+  }
+  void publicSetAipValue(const std::vector<eipScanner::cip::CipUint> aipValue) {
+    setAipValue(aipValue);
+  }
+};
 
-  IOInputData ioInputData;
+
+TEST_F(TestIOInputDataRig, CreateIOInputDataBuffer) {
+
+  TestIOInputData ioInputData;
 
   // Initialize the IOInputData object
-  ioInputData.setDipValue({0x6, 0x2});
-  ioInputData.setDipStatus({0x2});
-  ioInputData.setAipValue({0x0, 0x9});
+  ioInputData.publicSetDipValue({0x6, 0x2});
+  ioInputData.publicSetDipStatus({0x2});
+  ioInputData.publicSetAipValue({0x0, 0x9});
 
   // Write the data to a buffer
   eipScanner::utils::Buffer actualBuffer;
@@ -41,11 +56,11 @@ TEST_F(TestIOInputData, CreateIOInputDataBuffer) {
   EXPECT_EQ(expectedBuffer.data(), actualBuffer.data());
 }
 
-TEST_F(TestIOInputData, ReadIOInputDataBuffer) {
+TEST_F(TestIOInputDataRig, ReadIOInputDataBuffer) {
   IOInputData ioInputData;
 
-  std::vector<eipScanner::cip::CipBool> dipValue = {0x2, 0x8};
-  std::vector<eipScanner::cip::CipBool> dipStatus = {0x8, 0x0};
+  std::vector<eipScanner::cip::CipBool> dipValue = {0b00000010, 0b00001000};
+  std::vector<eipScanner::cip::CipBool> dipStatus = {0b00001000, 0x0};
   std::vector<eipScanner::cip::CipUint> aipValue = {0x3, 0x0, 0x0, 0x0};
 
   eipScanner::utils::Buffer startingBuffer;
@@ -53,7 +68,8 @@ TEST_F(TestIOInputData, ReadIOInputDataBuffer) {
 
   startingBuffer >> ioInputData;
 
-  EXPECT_EQ(dipValue, ioInputData.getDipValue());
-  EXPECT_EQ(dipStatus, ioInputData.getDipStatus());
-  EXPECT_EQ(aipValue, ioInputData.getAipValue());
+  EXPECT_TRUE(ioInputData.getDigitalInputValue(IOInputData::DigitalInput::AI_11));
+  EXPECT_FALSE( ioInputData.getDigitalInputStatus(IOInputData::DigitalInput::IO_2));
+  EXPECT_TRUE( ioInputData.getDigitalInputStatus(IOInputData::DigitalInput::IO_3));
+  EXPECT_EQ(0x3, ioInputData.getAnalogInputValue(IOInputData::AnalogInput::AI_9));
 }
