@@ -2,6 +2,7 @@
 // Created by Jan Ritzenhoff on 12/4/2024
 //
 #include "EIPScanner/vendor/teknic/clearlink/assembly/input/IOInputData.h"
+#include "EIPScanner/cip/Types.h"
 
 namespace eipScanner {
 namespace vendor {
@@ -26,6 +27,31 @@ IOInputData::_getDataFieldReferences() {
           std::ref(_reservedPadding)};
 }
 
+const eipScanner::cip::CipBool
+IOInputData::getDigitalInputValue(DigitalInput digitalInput) {
+  return _getBitValueFromVector(_dipValue, static_cast<uint8_t>(digitalInput));
+}
+const eipScanner::cip::CipBool
+IOInputData::getDigitalInputStatus(DigitalInput digitalInput) {
+  return _getBitValueFromVector(_dipStatus, static_cast<uint8_t>(digitalInput));
+}
+const eipScanner::cip::CipInt
+IOInputData::getAnalogInputValue(AnalogInput analogInput) {
+  eipScanner::cip::CipUint unsignedInput = _aipValue.at(static_cast<uint8_t>(analogInput));
+  return static_cast<eipScanner::cip::CipInt>(unsignedInput);
+}
+const eipScanner::cip::CipBool
+IOInputData::getAnalogInputStatus(AnalogInput analogInput) {
+  return _getBitValueFromVector(_aiopStatus, static_cast<uint8_t>(analogInput));
+}
+const eipScanner::cip::CipBool
+IOInputData::getAnalogOutputStatus(AnalogOutput analogOutput) {
+  return _getBitValueFromVector(_aiopStatus,
+                                static_cast<uint8_t>(analogOutput));
+}
+
+// -------------------------------------------------------------
+
 void IOInputData::setDipValue(
     const std::vector<eipScanner::cip::CipBool> dipValue) {
   // TODO: Add length constraints so that the size of dipValue is always ==
@@ -44,18 +70,6 @@ void IOInputData::setAipValue(
     const std::vector<eipScanner::cip::CipUint> aipValue) {
   _aipValue = aipValue;
   _aipValue.resize(AIP_VALUE_SIZE);
-}
-
-// -------------------------------------------------------------
-
-const std::vector<eipScanner::cip::CipBool> IOInputData::getDipValue() {
-  return _dipValue;
-}
-const std::vector<eipScanner::cip::CipBool> IOInputData::getDipStatus() {
-  return _dipStatus;
-}
-const std::vector<eipScanner::cip::CipUint> IOInputData::getAipValue() {
-  return _aipValue;
 }
 
 } // namespace input

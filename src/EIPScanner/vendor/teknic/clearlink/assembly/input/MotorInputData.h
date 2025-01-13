@@ -76,7 +76,7 @@ public:
    */
   eipScanner::cip::CipDword getMotorStatus() const;
 
-  enum MotorStatus {
+  enum class MotorStatus : uint8_t {
     AtTargetPosition = 0,
     StepsActive = 1,
     AtVelocity = 2,
@@ -114,7 +114,7 @@ public:
    */
   eipScanner::cip::CipDword getMotorShutdowns() const;
 
-  enum MotorShutdown {
+  enum class MotorShutdown : uint8_t {
     MotionCanceled_CommandWhileShutdown = 0,
     MotionCanceled_PosLimit = 1,
     MotionCanceled_NegLimit = 2,

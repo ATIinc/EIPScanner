@@ -23,6 +23,17 @@ OutputAssemblyObject::_getAssemblyDataFieldReferences() {
           {std::ref(_motor3OutputData)}, {std::ref(_serialAsciiOutputData)}};
 }
 
+assembly::output::IOOutputData OutputAssemblyObject::getIOOutputData() {
+  return _ioOutputData;
+}
+
+void OutputAssemblyObject::setIOOutputData(
+    assembly::output::IOOutputData ioOutputData) {
+  _ioOutputData = ioOutputData;
+}
+
+// -------------------------------------------------------------
+
 assembly::output::MotorOutputData OutputAssemblyObject::getMotor0OutputData() {
   return _motor0OutputData;
 }

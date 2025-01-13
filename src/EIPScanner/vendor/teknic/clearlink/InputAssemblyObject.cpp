@@ -4,6 +4,7 @@
 #include "EIPScanner/vendor/teknic/clearlink/InputAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/BaseAssemblyObject.h"
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
+#include <climits>
 
 namespace eipScanner {
 namespace vendor {
@@ -22,6 +23,17 @@ InputAssemblyObject::_getAssemblyDataFieldReferences() {
           {std::ref(_motor2InputData)},     {std::ref(_motor3InputData)},
           {std::ref(_serialAsciiInputData)}};
 }
+
+assembly::input::IOInputData InputAssemblyObject::getIOInputData() {
+  return _ioInputData;
+}
+
+void InputAssemblyObject::setIOInputData(
+    assembly::input::IOInputData ioInputData) {
+  _ioInputData = ioInputData;
+}
+
+// -------------------------------------------------------------
 
 assembly::input::MotorInputData InputAssemblyObject::getMotor0InputData() {
   return _motor0InputData;

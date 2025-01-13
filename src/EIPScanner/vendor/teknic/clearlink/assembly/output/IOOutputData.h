@@ -13,6 +13,7 @@
 #include "EIPScanner/cip/Types.h"
 
 #include "EIPScanner/vendor/teknic/clearlink/assembly/BaseAssemblyData.h"
+#include <cstdint>
 
 namespace eipScanner {
 namespace vendor {
@@ -32,6 +33,33 @@ public:
    * @param data
    */
   IOOutputData();
+
+  // -------------------------------------------------------------
+
+  enum class DigitalOutput : uint8_t {
+    IO_0 = 0,
+    IO_1 = 1,
+    IO_2 = 2,
+    IO_3 = 3,
+    IO_4 = 4,
+    IO_5 = 5,
+  };
+
+  // Used to configure IO_0 as a digital output rather than an analog output
+  eipScanner::cip::CipUsint DEFAULT_PWM_VALUE = 0;
+
+  // -------------------------------------------------------------
+
+  eipScanner::cip::CipInt getAnalogOutputValue();
+  bool getDigitalOutputValue(DigitalOutput output);
+  eipScanner::cip::CipUsint getDigitalOutputPWM(DigitalOutput output);
+
+  // -------------------------------------------------------------
+
+  void setAnalogOutputValue(eipScanner::cip::CipInt analogValue);
+  void setDigitalOutputValue(DigitalOutput output, bool outputValue);
+  void setDigitalOutputPWM(DigitalOutput output,
+                           eipScanner::cip::CipUsint pwmValue);
 
 private:
   std::vector<DataFieldReference> _getDataFieldReferences() override;
